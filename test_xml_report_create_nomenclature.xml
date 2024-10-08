@@ -2,92 +2,92 @@
 <root>
 <nomenclature_model>
    <group>
-      <name>РЎС‹СЂСЊРµ</name>
-      <unique_code>524fe8fbdaac4be8afa03886645c69c6</unique_code>
+      <name>Сырье</name>
+      <unique_code>9a1661fc23744589b44135cff0e0d111</unique_code>
    </group>
-   <name>РџС€РµРЅРёС‡РЅР°СЏ РјСѓРєР°</name>
+   <name>Пшеничная мука</name>
    <range>
       <base>
          <base>None</base>
-         <name>РіСЂР°РјРј</name>
-         <unique_code>c0f24295d42744fd9052c4a05ef125ad</unique_code>
+         <name>грамм</name>
+         <unique_code>bd6eac65ed934ea78aae29230d5d654a</unique_code>
          <value>1</value>
       </base>
-      <name>РєРі</name>
-      <unique_code>0cb9283f37054d12b945937caf73d08d</unique_code>
+      <name>кг</name>
+      <unique_code>8f1c4b8b7c6a443c859649aa4dd584bc</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>17d51fffa59f4079b2344525f26dbcb2</unique_code>
+   <unique_code>a28c539e56bb4416b33441eebefbe151</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
-      <name>РЎС‹СЂСЊРµ</name>
-      <unique_code>524fe8fbdaac4be8afa03886645c69c6</unique_code>
+      <name>Сырье</name>
+      <unique_code>9a1661fc23744589b44135cff0e0d111</unique_code>
    </group>
-   <name>РЎР°С…Р°СЂ</name>
+   <name>Сахар</name>
    <range>
       <base>
          <base>None</base>
-         <name>РіСЂР°РјРј</name>
-         <unique_code>c0f24295d42744fd9052c4a05ef125ad</unique_code>
+         <name>грамм</name>
+         <unique_code>bd6eac65ed934ea78aae29230d5d654a</unique_code>
          <value>1</value>
       </base>
-      <name>РєРі</name>
-      <unique_code>0cb9283f37054d12b945937caf73d08d</unique_code>
+      <name>кг</name>
+      <unique_code>8f1c4b8b7c6a443c859649aa4dd584bc</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>094c7ca1a48d4670a48a1eba8cfcc8d8</unique_code>
+   <unique_code>b3130f6826b54a8c8daeac10ddf28ba0</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
-      <name>РЎС‹СЂСЊРµ</name>
-      <unique_code>524fe8fbdaac4be8afa03886645c69c6</unique_code>
+      <name>Сырье</name>
+      <unique_code>9a1661fc23744589b44135cff0e0d111</unique_code>
    </group>
-   <name>РЎР»РёРІРѕС‡РЅРѕРµ РјР°СЃР»Рѕ</name>
+   <name>Сливочное масло</name>
    <range>
       <base>
          <base>None</base>
-         <name>РіСЂР°РјРј</name>
-         <unique_code>c0f24295d42744fd9052c4a05ef125ad</unique_code>
+         <name>грамм</name>
+         <unique_code>bd6eac65ed934ea78aae29230d5d654a</unique_code>
          <value>1</value>
       </base>
-      <name>РєРі</name>
-      <unique_code>0cb9283f37054d12b945937caf73d08d</unique_code>
+      <name>кг</name>
+      <unique_code>8f1c4b8b7c6a443c859649aa4dd584bc</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>f1c113ea678d4448872d733a9306d2c5</unique_code>
+   <unique_code>ba6ee66b72274b03858edf50b2ef44a7</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
-      <name>РЎС‹СЂСЊРµ</name>
-      <unique_code>524fe8fbdaac4be8afa03886645c69c6</unique_code>
+      <name>Сырье</name>
+      <unique_code>9a1661fc23744589b44135cff0e0d111</unique_code>
    </group>
-   <name>РЇР№С†Рѕ</name>
+   <name>Яйцо</name>
    <range>
       <base>None</base>
-      <name>С€С‚СѓРєР°</name>
-      <unique_code>1c55a0aa296940518399eb6274553ace</unique_code>
+      <name>штука</name>
+      <unique_code>f635a2c7adba46b6bd7576fa2b2ea494</unique_code>
       <value>1</value>
    </range>
-   <unique_code>ec3288f78c2641e99aedf9b33019c5c1</unique_code>
+   <unique_code>474f30a0c2734ea7be783aa3d854ac57</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
-      <name>РЎС‹СЂСЊРµ</name>
-      <unique_code>524fe8fbdaac4be8afa03886645c69c6</unique_code>
+      <name>Сырье</name>
+      <unique_code>9a1661fc23744589b44135cff0e0d111</unique_code>
    </group>
-   <name>Р’Р°РЅРёР»РёРЅ</name>
+   <name>Ванилин</name>
    <range>
       <base>
          <base>None</base>
-         <name>РіСЂР°РјРј</name>
-         <unique_code>c0f24295d42744fd9052c4a05ef125ad</unique_code>
+         <name>грамм</name>
+         <unique_code>bd6eac65ed934ea78aae29230d5d654a</unique_code>
          <value>1</value>
       </base>
-      <name>РєРі</name>
-      <unique_code>0cb9283f37054d12b945937caf73d08d</unique_code>
+      <name>кг</name>
+      <unique_code>8f1c4b8b7c6a443c859649aa4dd584bc</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>c23367cf4c4e47eab6e3c1f51482cb56</unique_code>
+   <unique_code>0403cbc799174e07bb0cfcf0cdc36ea0</unique_code>
 </nomenclature_model>
 </root>

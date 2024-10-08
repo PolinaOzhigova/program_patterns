@@ -2,42 +2,42 @@
 <root>
 <range_model>
    <base>None</base>
-   <name>РіСЂР°РјРј</name>
-   <unique_code>5ca24009218744fba671053c2b56a81b</unique_code>
+   <name>грамм</name>
+   <unique_code>97002a7263164866b3c572d2c50b5851</unique_code>
    <value>1</value>
 </range_model>
 <range_model>
    <base>None</base>
-   <name>РјРёР»Р»РёР»РёС‚СЂ</name>
-   <unique_code>9830dd5eff9f4d6c9e3ab4a86f7f484c</unique_code>
+   <name>миллилитр</name>
+   <unique_code>1fc37057c34a49ec9f5f3a2aa35dfdce</unique_code>
    <value>1</value>
 </range_model>
 <range_model>
    <base>
       <base>None</base>
-      <name>РіСЂР°РјРј</name>
-      <unique_code>5ca24009218744fba671053c2b56a81b</unique_code>
+      <name>грамм</name>
+      <unique_code>97002a7263164866b3c572d2c50b5851</unique_code>
       <value>1</value>
    </base>
-   <name>РєРі</name>
-   <unique_code>ad7149f6dad145e484caded139d79ffd</unique_code>
+   <name>кг</name>
+   <unique_code>047634963e1a4d899e40d1cb876809d4</unique_code>
    <value>1000</value>
 </range_model>
 <range_model>
    <base>
       <base>None</base>
-      <name>РјРёР»Р»РёР»РёС‚СЂ</name>
-      <unique_code>9830dd5eff9f4d6c9e3ab4a86f7f484c</unique_code>
+      <name>миллилитр</name>
+      <unique_code>1fc37057c34a49ec9f5f3a2aa35dfdce</unique_code>
       <value>1</value>
    </base>
-   <name>Р»РёС‚СЂ</name>
-   <unique_code>0955642203ce41f3ab39ccbe623f5692</unique_code>
+   <name>литр</name>
+   <unique_code>7142568a22c44394b31ddfe12b4c3a47</unique_code>
    <value>1000</value>
 </range_model>
 <range_model>
    <base>None</base>
-   <name>С€С‚СѓРєР°</name>
-   <unique_code>84928299245243c3b204ba329b9e6b17</unique_code>
+   <name>штука</name>
+   <unique_code>3373089488e94b7a89be3754206c275e</unique_code>
    <value>1</value>
 </range_model>
 </root>
