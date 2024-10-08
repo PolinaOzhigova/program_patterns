@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<root>
+<receipt_model>
+   <cooking_period>10</cooking_period>
+   <cooking_portion>10</cooking_portion>
+   <ingredients>
+      <_0d4204dfa1f540dbafe556ec7cecd638>
+         <nomenclature>
+            <group>
+               <name>Сырье</name>
+               <unique_code>ee8414c3c50049b6a55256074014ce39</unique_code>
+            </group>
+            <name>Яйцо</name>
+            <range>
+               <base>None</base>
+               <name>штука</name>
+               <unique_code>e7683fc4eff64e7faf15fa136186f369</unique_code>
+               <value>1</value>
+            </range>
+            <unique_code>0d4204dfa1f540dbafe556ec7cecd638</unique_code>
+         </nomenclature>
+         <quantity>1</quantity>
+         <range>
+            <base>None</base>
+            <name>штука</name>
+            <unique_code>e7683fc4eff64e7faf15fa136186f369</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>392f68e4faf44e5aa46c8472cb0ac725</unique_code>
+      </_0d4204dfa1f540dbafe556ec7cecd638>
+      <_118e68986ca545f4946af52ac178a1e9>
+         <nomenclature>
+            <group>
+               <name>Сырье</name>
+               <unique_code>ee8414c3c50049b6a55256074014ce39</unique_code>
+            </group>
+            <name>Ванилин</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>грамм</name>
+                  <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+                  <value>1</value>
+               </base>
+               <name>кг</name>
+               <unique_code>f842bd6ebf814e80af1fc5d52b8495ca</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>118e68986ca545f4946af52ac178a1e9</unique_code>
+         </nomenclature>
+         <quantity>5</quantity>
+         <range>
+            <base>None</base>
+            <name>грамм</name>
+            <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>575517d40afd46ef9c184eb7dbcce511</unique_code>
+      </_118e68986ca545f4946af52ac178a1e9>
+      <_3a17114f7c2843b191411f7a7236a5c5>
+         <nomenclature>
+            <group>
+               <name>Сырье</name>
+               <unique_code>ee8414c3c50049b6a55256074014ce39</unique_code>
+            </group>
+            <name>Сахар</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>грамм</name>
+                  <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+                  <value>1</value>
+               </base>
+               <name>кг</name>
+               <unique_code>f842bd6ebf814e80af1fc5d52b8495ca</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>3a17114f7c2843b191411f7a7236a5c5</unique_code>
+         </nomenclature>
+         <quantity>80</quantity>
+         <range>
+            <base>None</base>
+            <name>грамм</name>
+            <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>09e5222e3794496e9d19d33c8e408d71</unique_code>
+      </_3a17114f7c2843b191411f7a7236a5c5>
+      <_8170e32b29aa48d3a68d015cb2b3a92e>
+         <nomenclature>
+            <group>
+               <name>Сырье</name>
+               <unique_code>ee8414c3c50049b6a55256074014ce39</unique_code>
+            </group>
+            <name>Сливочное масло</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>грамм</name>
+                  <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+                  <value>1</value>
+               </base>
+               <name>кг</name>
+               <unique_code>f842bd6ebf814e80af1fc5d52b8495ca</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>8170e32b29aa48d3a68d015cb2b3a92e</unique_code>
+         </nomenclature>
+         <quantity>70</quantity>
+         <range>
+            <base>None</base>
+            <name>грамм</name>
+            <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>03c05c056208408d98c4403201982452</unique_code>
+      </_8170e32b29aa48d3a68d015cb2b3a92e>
+      <bddbf2e35cc54d599aaa2f0836bcbd7d>
+         <nomenclature>
+            <group>
+               <name>Сырье</name>
+               <unique_code>ee8414c3c50049b6a55256074014ce39</unique_code>
+            </group>
+            <name>Пшеничная мука</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>грамм</name>
+                  <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+                  <value>1</value>
+               </base>
+               <name>кг</name>
+               <unique_code>f842bd6ebf814e80af1fc5d52b8495ca</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>bddbf2e35cc54d599aaa2f0836bcbd7d</unique_code>
+         </nomenclature>
+         <quantity>100</quantity>
+         <range>
+            <base>None</base>
+            <name>грамм</name>
+            <unique_code>a007bebb8d854e50838c6797f8e24407</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>7f90b11797264a7aab2043439c9f4f52</unique_code>
+      </bddbf2e35cc54d599aaa2f0836bcbd7d>
+   </ingredients>
+   <instructions>Подготовьте необходимые продукты. Из данного количества у меня получилось 8 штук диаметром около 10 см.</instructions>
+   <instructions>Масло положите в сотейник с толстым дном. Растопите его на маленьком огне на плите, на водяной бане либо в микроволновке.</instructions>
+   <instructions>Добавьте в теплое масло сахар. Перемешайте венчиком до полного растворения сахара. От тепла сахар довольно быстро растает.</instructions>
+   <instructions>Добавьте в масло яйцо. Предварительно все-таки проверьте масло, не горячее ли оно, иначе яйцо может свариться. Перемешайте яйцо с маслом до однородности.</instructions>
+   <instructions>Всыпьте муку, добавьте ванилин.</instructions>
+   <instructions>Перемешайте массу венчиком до состояния гладкого однородного теста.</instructions>
+   <instructions>Разогрейте вафельницу по инструкции к ней. У меня очень старая, еще советских времен электровафельница. Она может и не очень красивая, но печет замечательно!</instructions>
+   <instructions>Пеките вафли несколько минут до золотистого цвета. Осторожно откройте вафельницу, она очень горячая! Снимите вафлю лопаткой. Горячая она очень мягкая, как блинчик.</instructions>
+   <name>Вафли хрустящие в вафильнице</name>
+   <unique_code>0019559d7939479b8a8bf8f15230f187</unique_code>
+</receipt_model>
+</root>

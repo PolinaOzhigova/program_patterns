@@ -1,4 +1,19 @@
 {
     "organization_name" : "Рога и копыта",
-    "inn": "38093093498"
+    "inn": "123456789",
+    "default_report_format": 1,
+    "report_handlers": [
+        {
+            "type": 1,
+            "handler": "csv_report"
+        },
+        {
+            "type": 2,
+            "handler": "xml_report"
+        },
+        {
+            "type": 3,
+            "handler": "json_report"
+        }         
+    ]
 }

@@ -1,0 +1,160 @@
+[
+    {
+        "cooking_period": 10,
+        "cooking_portion": 10,
+        "ingredients": {
+            "2cd685d275a9497bb635e83906f7b7c6": {
+                "nomenclature": {
+                    "group": {
+                        "name": "Сырье",
+                        "unique_code": "522934f1ed964d4aacf933ce053553e5"
+                    },
+                    "name": "Пшеничная мука",
+                    "range": {
+                        "base": {
+                            "base": null,
+                            "name": "грамм",
+                            "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                            "value": 1
+                        },
+                        "name": "кг",
+                        "unique_code": "13475ba3a2cc46a39ea267050750b391",
+                        "value": 1000
+                    },
+                    "unique_code": "2cd685d275a9497bb635e83906f7b7c6"
+                },
+                "quantity": 100,
+                "range": {
+                    "base": null,
+                    "name": "грамм",
+                    "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                    "value": 1
+                },
+                "unique_code": "7b69603554a04a42a88c514189186940"
+            },
+            "4bb58728f6f04d7d8633d44770c00ea2": {
+                "nomenclature": {
+                    "group": {
+                        "name": "Сырье",
+                        "unique_code": "522934f1ed964d4aacf933ce053553e5"
+                    },
+                    "name": "Сахар",
+                    "range": {
+                        "base": {
+                            "base": null,
+                            "name": "грамм",
+                            "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                            "value": 1
+                        },
+                        "name": "кг",
+                        "unique_code": "13475ba3a2cc46a39ea267050750b391",
+                        "value": 1000
+                    },
+                    "unique_code": "4bb58728f6f04d7d8633d44770c00ea2"
+                },
+                "quantity": 80,
+                "range": {
+                    "base": null,
+                    "name": "грамм",
+                    "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                    "value": 1
+                },
+                "unique_code": "cf659eebe8e84ffbb8e381e26ab06c0c"
+            },
+            "29e8bf226bae454e9009adf60aa9153b": {
+                "nomenclature": {
+                    "group": {
+                        "name": "Сырье",
+                        "unique_code": "522934f1ed964d4aacf933ce053553e5"
+                    },
+                    "name": "Сливочное масло",
+                    "range": {
+                        "base": {
+                            "base": null,
+                            "name": "грамм",
+                            "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                            "value": 1
+                        },
+                        "name": "кг",
+                        "unique_code": "13475ba3a2cc46a39ea267050750b391",
+                        "value": 1000
+                    },
+                    "unique_code": "29e8bf226bae454e9009adf60aa9153b"
+                },
+                "quantity": 70,
+                "range": {
+                    "base": null,
+                    "name": "грамм",
+                    "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                    "value": 1
+                },
+                "unique_code": "6371634e65644aff90cf7fe96683c756"
+            },
+            "f4d377c9501d4be8b3d63ea31670d44e": {
+                "nomenclature": {
+                    "group": {
+                        "name": "Сырье",
+                        "unique_code": "522934f1ed964d4aacf933ce053553e5"
+                    },
+                    "name": "Яйцо",
+                    "range": {
+                        "base": null,
+                        "name": "штука",
+                        "unique_code": "bc81b6f3fd8e4571991871fbeb571b72",
+                        "value": 1
+                    },
+                    "unique_code": "f4d377c9501d4be8b3d63ea31670d44e"
+                },
+                "quantity": 1,
+                "range": {
+                    "base": null,
+                    "name": "штука",
+                    "unique_code": "bc81b6f3fd8e4571991871fbeb571b72",
+                    "value": 1
+                },
+                "unique_code": "bc8176ccf3064d44ad515638345d8329"
+            },
+            "034be5beb06a4f3782601454c827d89a": {
+                "nomenclature": {
+                    "group": {
+                        "name": "Сырье",
+                        "unique_code": "522934f1ed964d4aacf933ce053553e5"
+                    },
+                    "name": "Ванилин",
+                    "range": {
+                        "base": {
+                            "base": null,
+                            "name": "грамм",
+                            "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                            "value": 1
+                        },
+                        "name": "кг",
+                        "unique_code": "13475ba3a2cc46a39ea267050750b391",
+                        "value": 1000
+                    },
+                    "unique_code": "034be5beb06a4f3782601454c827d89a"
+                },
+                "quantity": 5,
+                "range": {
+                    "base": null,
+                    "name": "грамм",
+                    "unique_code": "e7edd75dac064c2f974f35cb8d95db22",
+                    "value": 1
+                },
+                "unique_code": "49e8d4ce102248b38bfb48c3f34698a4"
+            }
+        },
+        "instructions": [
+            "Подготовьте необходимые продукты. Из данного количества у меня получилось 8 штук диаметром около 10 см.",
+            "Масло положите в сотейник с толстым дном. Растопите его на маленьком огне на плите, на водяной бане либо в микроволновке.",
+            "Добавьте в теплое масло сахар. Перемешайте венчиком до полного растворения сахара. От тепла сахар довольно быстро растает.",
+            "Добавьте в масло яйцо. Предварительно все-таки проверьте масло, не горячее ли оно, иначе яйцо может свариться. Перемешайте яйцо с маслом до однородности.",
+            "Всыпьте муку, добавьте ванилин.",
+            "Перемешайте массу венчиком до состояния гладкого однородного теста.",
+            "Разогрейте вафельницу по инструкции к ней. У меня очень старая, еще советских времен электровафельница. Она может и не очень красивая, но печет замечательно!",
+            "Пеките вафли несколько минут до золотистого цвета. Осторожно откройте вафельницу, она очень горячая! Снимите вафлю лопаткой. Горячая она очень мягкая, как блинчик."
+        ],
+        "name": "Вафли хрустящие в вафильнице",
+        "unique_code": "74003707776c4a82b2b6206e02c3f58e"
+    }
+]
