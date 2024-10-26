@@ -1,11 +1,14 @@
 from Src.Core.abstract_logic import abstract_logic
 from Src.data_reposity import data_reposity
 from Src.Core.validator import operation_exception, validator
+from Src.Core.transation_type import transaction_type
 from Src.Models.group import group_model
 from Src.Models.range import range_model
 from Src.Models.nomenclature import nomenclature_model
 from Src.Models.receipt import receipt_model
 from Src.Models.ingredient import ingredient_model
+from Src.Models.warehouse import warehouse
+from Src.Models.warehouse_transactions import warehouse_transaction
 
 """
 Сервис для реализации первого старта приложения
@@ -112,7 +115,58 @@ class start_service(abstract_logic):
                                          "Пеките вафли несколько минут до золотистого цвета. Осторожно откройте вафельницу, она очень горячая! Снимите вафлю лопаткой. Горячая она очень мягкая, как блинчик."],
                                          10, 10)
                                         
-        self.__reposity.data[data_reposity.receipt_key()] = [receipt]          
+        self.__reposity.data[data_reposity.receipt_key()] = [receipt]
+
+    def __create_warehouse(self):
+        _list = []
+        _list.append(
+            warehouse.create("test_address_1"),
+
+        )
+        _list.append(
+            warehouse.create("test_address_2")
+        )
+
+        self.__reposity.data[data_reposity.warehouse_key()] = _list
+
+
+    def __create_warehouse_transaction(self):
+        _list = []
+
+        list_warehouse = self.__reposity.data[data_reposity.warehouse_key()]
+        list_nomenclature = self.__reposity.data[data_reposity.nomenclature_key()]
+
+        _list.append(
+            warehouse_transaction.create(
+                name="test_warehouse_transaction_1",
+                warehouse=list_warehouse[0],
+                nomenclature=list_nomenclature[0],
+                quantity=3,
+                range=list_nomenclature[0].range
+            )
+        )
+
+        _list.append(
+            warehouse_transaction.create(
+                name="test_warehouse_transaction_2",
+                warehouse=list_warehouse[1],
+                nomenclature=list_nomenclature[1],
+                range=list_nomenclature[1].range
+            )
+        )
+
+        _list.append(
+            warehouse_transaction.create(
+                name="test_warehouse_transaction_2",
+                warehouse=list_warehouse[0],
+                nomenclature=list_nomenclature[0],
+                range=list_nomenclature[1].range,
+                quantity=2,
+                transaction_type=transaction_type.COME
+            )
+        )
+
+        self.__reposity.data[data_reposity.warehouse_transaction_key()] = _list
 
 
     """
@@ -124,6 +178,8 @@ class start_service(abstract_logic):
             self.__create_ranges()
             self.__create_nomenclatures()
             self.__create_receipts()
+            self.__create_warehouse()
+            self.__create_warehouse_transaction()
 
             return True
         except Exception as ex :
