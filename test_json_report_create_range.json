@@ -1,42 +1,42 @@
 [
     {
         "base": null,
-        "name": "РіСЂР°РјРј",
-        "unique_code": "09da6a45e1d84ebb9fdce48a1ed580cb",
+        "name": "грамм",
+        "unique_code": "84f635078c254f8aa63e5d867b852186",
         "value": 1
     },
     {
         "base": null,
-        "name": "РјРёР»Р»РёР»РёС‚СЂ",
-        "unique_code": "9723134d89ef4899aa96b43e62db72e7",
+        "name": "миллилитр",
+        "unique_code": "047612e330084105a29c41cadcd9b153",
         "value": 1
     },
     {
         "base": {
             "base": null,
-            "name": "РіСЂР°РјРј",
-            "unique_code": "09da6a45e1d84ebb9fdce48a1ed580cb",
+            "name": "грамм",
+            "unique_code": "84f635078c254f8aa63e5d867b852186",
             "value": 1
         },
-        "name": "РєРі",
-        "unique_code": "30db47a2fcae4c5dad6c461c46d7be71",
+        "name": "кг",
+        "unique_code": "01da9783f2f84b80af2fee5eb921568b",
         "value": 1000
     },
     {
         "base": {
             "base": null,
-            "name": "РјРёР»Р»РёР»РёС‚СЂ",
-            "unique_code": "9723134d89ef4899aa96b43e62db72e7",
+            "name": "миллилитр",
+            "unique_code": "047612e330084105a29c41cadcd9b153",
             "value": 1
         },
-        "name": "Р»РёС‚СЂ",
-        "unique_code": "c7fadf99eb8246b68797093db62b95dd",
+        "name": "литр",
+        "unique_code": "ee718784a4414874bc2eee85d894121e",
         "value": 1000
     },
     {
         "base": null,
-        "name": "С€С‚СѓРєР°",
-        "unique_code": "840acb73e47747ee9754e801c999f742",
+        "name": "штука",
+        "unique_code": "570d9cae7a3e4b399593b3f2aa943bbe",
         "value": 1
     }
 ]
