@@ -1,12 +1,12 @@
 #!/bin/bash
 
-python -m venv .venv
+python3 -m venv .venv
 . .venv/bin/activate
 
-pip install typing-extensions --upgrade
-pip install dict2xml
-pip install connexion[flask]
-pip install connexion[swagger-ui]
-pip install connexion[uvicorn]
-pip install flask-restplus
-pip install flask
+pip3 install typing-extensions --upgrade
+pip3 install dict2xml
+pip3 install -U connexion[flask]
+pip3 install -U connexion[swagger-ui]
+pip3 install -U connexion[uvicorn]
+pip3 install -U flask-restplus
+pip3 install -U Flask

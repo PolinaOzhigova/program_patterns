@@ -1,5 +1,4 @@
 from enum import Enum
-import re
 from Src.Core.validator import validator
 
 """

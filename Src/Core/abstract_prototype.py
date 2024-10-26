@@ -1,27 +1,29 @@
 from abc import ABC, abstractmethod
+from Src.Core.validator import validator, argument_exception
 
-from Src.Core.validator import validator
 
-
-class AbstractPrototype(ABC):
+"""
+Абстрактный класс прототип
+"""
+class abstract_prototype(ABC):
     __data = []
 
-    def __init__(self, source: list):
+    def __init__(self) -> None:
         super().__init__()
-        validator.validate(source, list)
-        self.__data = source
 
     @abstractmethod
-    def create(self, data: list, filter):
-        validator.validate(data, list)
-
-        # instance = AbstractPrototype(data)
-        # return instance
-
+    def create(self):
+        pass
+    
+    """
+    Полученный набор данных
+    """
     @property
     def data(self) -> list:
-        return self.__data
-
+        return self.__data    
+    
     @data.setter
-    def data(self, value: list):
+    def data(self, value:list):
         self.__data = value
+
+         

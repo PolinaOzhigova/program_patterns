@@ -39,11 +39,16 @@ class settings_manager(abstract_logic):
             current_path_info = os.path.split(__file__)
             current_path = current_path_info[0]
             full_name = f"{current_path}{os.sep}{self.__file_name}"
-            stream = open(full_name)
-            data = json.load(stream)
 
-            factory = convert_factory()
-            factory.deserialize(data,  self.__settings)
+            if not os.path.exists(full_name):
+                self.set_exception(operation_exception(f"Не найден файл настроек {full_name} Default загрузка"))
+                self.__settings = self.__default_setting()
+            else:    
+                stream = open(full_name)
+                data = json.load(stream)
+
+                factory = convert_factory()
+                factory.deserialize(data,  self.__settings)
             
             return True
         except Exception as ex :

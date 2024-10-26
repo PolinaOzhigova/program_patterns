@@ -4,156 +4,156 @@
    <cooking_period>10</cooking_period>
    <cooking_portion>10</cooking_portion>
    <ingredients>
-      <_0bbd1e140d214cc7b91e105110cc5736>
+      <_02dda5a12fc844fa805df65aa5586949>
          <nomenclature>
             <group>
-               <name>Сырье</name>
-               <unique_code>14b36653fbcc46b28712188b582c01db</unique_code>
+               <name>РЎС‹СЂСЊРµ</name>
+               <unique_code>4d41fb8822524623a3495a824d788c84</unique_code>
             </group>
-            <name>Сливочное масло</name>
+            <name>РџС€РµРЅРёС‡РЅР°СЏ РјСѓРєР°</name>
             <range>
                <base>
                   <base>None</base>
-                  <name>грамм</name>
-                  <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
+                  <name>РіСЂР°РјРј</name>
+                  <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
                   <value>1</value>
                </base>
-               <name>кг</name>
-               <unique_code>e0bfcc9ac8f44682ab307ad8efc68479</unique_code>
+               <name>РєРі</name>
+               <unique_code>6fb79c03fb6040a1bcd1113e7e26760d</unique_code>
                <value>1000</value>
             </range>
-            <unique_code>0bbd1e140d214cc7b91e105110cc5736</unique_code>
-         </nomenclature>
-         <quantity>70</quantity>
-         <range>
-            <base>None</base>
-            <name>грамм</name>
-            <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
-            <value>1</value>
-         </range>
-         <unique_code>e7be96c9a79941e1b9651f36ceaf5992</unique_code>
-      </_0bbd1e140d214cc7b91e105110cc5736>
-      <_1879cd86e9b6452f8c45096489b08581>
-         <nomenclature>
-            <group>
-               <name>Сырье</name>
-               <unique_code>14b36653fbcc46b28712188b582c01db</unique_code>
-            </group>
-            <name>Ванилин</name>
-            <range>
-               <base>
-                  <base>None</base>
-                  <name>грамм</name>
-                  <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
-                  <value>1</value>
-               </base>
-               <name>кг</name>
-               <unique_code>e0bfcc9ac8f44682ab307ad8efc68479</unique_code>
-               <value>1000</value>
-            </range>
-            <unique_code>1879cd86e9b6452f8c45096489b08581</unique_code>
-         </nomenclature>
-         <quantity>5</quantity>
-         <range>
-            <base>None</base>
-            <name>грамм</name>
-            <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
-            <value>1</value>
-         </range>
-         <unique_code>c4de2acbd7684e4e8a22a98b79bb7c55</unique_code>
-      </_1879cd86e9b6452f8c45096489b08581>
-      <_22232c6043cc474d94300c9da384280d>
-         <nomenclature>
-            <group>
-               <name>Сырье</name>
-               <unique_code>14b36653fbcc46b28712188b582c01db</unique_code>
-            </group>
-            <name>Яйцо</name>
-            <range>
-               <base>None</base>
-               <name>штука</name>
-               <unique_code>422afa8b169a414ab7b0758379b12811</unique_code>
-               <value>1</value>
-            </range>
-            <unique_code>22232c6043cc474d94300c9da384280d</unique_code>
-         </nomenclature>
-         <quantity>1</quantity>
-         <range>
-            <base>None</base>
-            <name>штука</name>
-            <unique_code>422afa8b169a414ab7b0758379b12811</unique_code>
-            <value>1</value>
-         </range>
-         <unique_code>39d987660d0a4b36a447f255997dfb1c</unique_code>
-      </_22232c6043cc474d94300c9da384280d>
-      <_4090ddc339a24e5f98757b730547b962>
-         <nomenclature>
-            <group>
-               <name>Сырье</name>
-               <unique_code>14b36653fbcc46b28712188b582c01db</unique_code>
-            </group>
-            <name>Пшеничная мука</name>
-            <range>
-               <base>
-                  <base>None</base>
-                  <name>грамм</name>
-                  <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
-                  <value>1</value>
-               </base>
-               <name>кг</name>
-               <unique_code>e0bfcc9ac8f44682ab307ad8efc68479</unique_code>
-               <value>1000</value>
-            </range>
-            <unique_code>4090ddc339a24e5f98757b730547b962</unique_code>
+            <unique_code>02dda5a12fc844fa805df65aa5586949</unique_code>
          </nomenclature>
          <quantity>100</quantity>
          <range>
             <base>None</base>
-            <name>грамм</name>
-            <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
+            <name>РіСЂР°РјРј</name>
+            <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
             <value>1</value>
          </range>
-         <unique_code>6727ec8f36a34ff0911ae5817c2dd085</unique_code>
-      </_4090ddc339a24e5f98757b730547b962>
-      <_577379bd437a499f95bacc2607fa88ae>
+         <unique_code>d1b481c868ca4157b3ee1d987130aa4b</unique_code>
+      </_02dda5a12fc844fa805df65aa5586949>
+      <_1331fcfe644a4db882caf8f316ac1920>
          <nomenclature>
             <group>
-               <name>Сырье</name>
-               <unique_code>14b36653fbcc46b28712188b582c01db</unique_code>
+               <name>РЎС‹СЂСЊРµ</name>
+               <unique_code>4d41fb8822524623a3495a824d788c84</unique_code>
             </group>
-            <name>Сахар</name>
+            <name>РЎР»РёРІРѕС‡РЅРѕРµ РјР°СЃР»Рѕ</name>
             <range>
                <base>
                   <base>None</base>
-                  <name>грамм</name>
-                  <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
+                  <name>РіСЂР°РјРј</name>
+                  <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
                   <value>1</value>
                </base>
-               <name>кг</name>
-               <unique_code>e0bfcc9ac8f44682ab307ad8efc68479</unique_code>
+               <name>РєРі</name>
+               <unique_code>6fb79c03fb6040a1bcd1113e7e26760d</unique_code>
                <value>1000</value>
             </range>
-            <unique_code>577379bd437a499f95bacc2607fa88ae</unique_code>
+            <unique_code>1331fcfe644a4db882caf8f316ac1920</unique_code>
+         </nomenclature>
+         <quantity>70</quantity>
+         <range>
+            <base>None</base>
+            <name>РіСЂР°РјРј</name>
+            <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>ff18f37ce0f946df9e50e37c277592c6</unique_code>
+      </_1331fcfe644a4db882caf8f316ac1920>
+      <_32e927d1fe664b0db386664cc471b48d>
+         <nomenclature>
+            <group>
+               <name>РЎС‹СЂСЊРµ</name>
+               <unique_code>4d41fb8822524623a3495a824d788c84</unique_code>
+            </group>
+            <name>РЇР№С†Рѕ</name>
+            <range>
+               <base>None</base>
+               <name>С€С‚СѓРєР°</name>
+               <unique_code>4e8df2bf8e2a4cf9a30cee286cf62e2d</unique_code>
+               <value>1</value>
+            </range>
+            <unique_code>32e927d1fe664b0db386664cc471b48d</unique_code>
+         </nomenclature>
+         <quantity>1</quantity>
+         <range>
+            <base>None</base>
+            <name>С€С‚СѓРєР°</name>
+            <unique_code>4e8df2bf8e2a4cf9a30cee286cf62e2d</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>d9439bbe117546fb9d66e5f225d1313f</unique_code>
+      </_32e927d1fe664b0db386664cc471b48d>
+      <_5144e7e9689a4679b1f3963b9c58058b>
+         <nomenclature>
+            <group>
+               <name>РЎС‹СЂСЊРµ</name>
+               <unique_code>4d41fb8822524623a3495a824d788c84</unique_code>
+            </group>
+            <name>РЎР°С…Р°СЂ</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>РіСЂР°РјРј</name>
+                  <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
+                  <value>1</value>
+               </base>
+               <name>РєРі</name>
+               <unique_code>6fb79c03fb6040a1bcd1113e7e26760d</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>5144e7e9689a4679b1f3963b9c58058b</unique_code>
          </nomenclature>
          <quantity>80</quantity>
          <range>
             <base>None</base>
-            <name>грамм</name>
-            <unique_code>763c3a89c8ae40e2ac571f20d8e1b010</unique_code>
+            <name>РіСЂР°РјРј</name>
+            <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
             <value>1</value>
          </range>
-         <unique_code>169bfe6385ee4dd0b16aed32ec08aa29</unique_code>
-      </_577379bd437a499f95bacc2607fa88ae>
+         <unique_code>2aa0f7f42a144604937077435dbaec66</unique_code>
+      </_5144e7e9689a4679b1f3963b9c58058b>
+      <dab5da77d604453fbbaa06850037da4a>
+         <nomenclature>
+            <group>
+               <name>РЎС‹СЂСЊРµ</name>
+               <unique_code>4d41fb8822524623a3495a824d788c84</unique_code>
+            </group>
+            <name>Р’Р°РЅРёР»РёРЅ</name>
+            <range>
+               <base>
+                  <base>None</base>
+                  <name>РіСЂР°РјРј</name>
+                  <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
+                  <value>1</value>
+               </base>
+               <name>РєРі</name>
+               <unique_code>6fb79c03fb6040a1bcd1113e7e26760d</unique_code>
+               <value>1000</value>
+            </range>
+            <unique_code>dab5da77d604453fbbaa06850037da4a</unique_code>
+         </nomenclature>
+         <quantity>5</quantity>
+         <range>
+            <base>None</base>
+            <name>РіСЂР°РјРј</name>
+            <unique_code>74a363255e7843429f3706a481ca8188</unique_code>
+            <value>1</value>
+         </range>
+         <unique_code>7ecc9a3c05a3444b9deee45a21f340d9</unique_code>
+      </dab5da77d604453fbbaa06850037da4a>
    </ingredients>
-   <instructions>Подготовьте необходимые продукты. Из данного количества у меня получилось 8 штук диаметром около 10 см.</instructions>
-   <instructions>Масло положите в сотейник с толстым дном. Растопите его на маленьком огне на плите, на водяной бане либо в микроволновке.</instructions>
-   <instructions>Добавьте в теплое масло сахар. Перемешайте венчиком до полного растворения сахара. От тепла сахар довольно быстро растает.</instructions>
-   <instructions>Добавьте в масло яйцо. Предварительно все-таки проверьте масло, не горячее ли оно, иначе яйцо может свариться. Перемешайте яйцо с маслом до однородности.</instructions>
-   <instructions>Всыпьте муку, добавьте ванилин.</instructions>
-   <instructions>Перемешайте массу венчиком до состояния гладкого однородного теста.</instructions>
-   <instructions>Разогрейте вафельницу по инструкции к ней. У меня очень старая, еще советских времен электровафельница. Она может и не очень красивая, но печет замечательно!</instructions>
-   <instructions>Пеките вафли несколько минут до золотистого цвета. Осторожно откройте вафельницу, она очень горячая! Снимите вафлю лопаткой. Горячая она очень мягкая, как блинчик.</instructions>
-   <name>Вафли хрустящие в вафильнице</name>
-   <unique_code>31df5fb8ce624e3fbe2e04145402c4b2</unique_code>
+   <instructions>РџРѕРґРіРѕС‚РѕРІСЊС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РїСЂРѕРґСѓРєС‚С‹. РР· РґР°РЅРЅРѕРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° Сѓ РјРµРЅСЏ РїРѕР»СѓС‡РёР»РѕСЃСЊ 8 С€С‚СѓРє РґРёР°РјРµС‚СЂРѕРј РѕРєРѕР»Рѕ 10 СЃРј.</instructions>
+   <instructions>РњР°СЃР»Рѕ РїРѕР»РѕР¶РёС‚Рµ РІ СЃРѕС‚РµР№РЅРёРє СЃ С‚РѕР»СЃС‚С‹Рј РґРЅРѕРј. Р Р°СЃС‚РѕРїРёС‚Рµ РµРіРѕ РЅР° РјР°Р»РµРЅСЊРєРѕРј РѕРіРЅРµ РЅР° РїР»РёС‚Рµ, РЅР° РІРѕРґСЏРЅРѕР№ Р±Р°РЅРµ Р»РёР±Рѕ РІ РјРёРєСЂРѕРІРѕР»РЅРѕРІРєРµ.</instructions>
+   <instructions>Р”РѕР±Р°РІСЊС‚Рµ РІ С‚РµРїР»РѕРµ РјР°СЃР»Рѕ СЃР°С…Р°СЂ. РџРµСЂРµРјРµС€Р°Р№С‚Рµ РІРµРЅС‡РёРєРѕРј РґРѕ РїРѕР»РЅРѕРіРѕ СЂР°СЃС‚РІРѕСЂРµРЅРёСЏ СЃР°С…Р°СЂР°. РћС‚ С‚РµРїР»Р° СЃР°С…Р°СЂ РґРѕРІРѕР»СЊРЅРѕ Р±С‹СЃС‚СЂРѕ СЂР°СЃС‚Р°РµС‚.</instructions>
+   <instructions>Р”РѕР±Р°РІСЊС‚Рµ РІ РјР°СЃР»Рѕ СЏР№С†Рѕ. РџСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ РІСЃРµ-С‚Р°РєРё РїСЂРѕРІРµСЂСЊС‚Рµ РјР°СЃР»Рѕ, РЅРµ РіРѕСЂСЏС‡РµРµ Р»Рё РѕРЅРѕ, РёРЅР°С‡Рµ СЏР№С†Рѕ РјРѕР¶РµС‚ СЃРІР°СЂРёС‚СЊСЃСЏ. РџРµСЂРµРјРµС€Р°Р№С‚Рµ СЏР№С†Рѕ СЃ РјР°СЃР»РѕРј РґРѕ РѕРґРЅРѕСЂРѕРґРЅРѕСЃС‚Рё.</instructions>
+   <instructions>Р’СЃС‹РїСЊС‚Рµ РјСѓРєСѓ, РґРѕР±Р°РІСЊС‚Рµ РІР°РЅРёР»РёРЅ.</instructions>
+   <instructions>РџРµСЂРµРјРµС€Р°Р№С‚Рµ РјР°СЃСЃСѓ РІРµРЅС‡РёРєРѕРј РґРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ РіР»Р°РґРєРѕРіРѕ РѕРґРЅРѕСЂРѕРґРЅРѕРіРѕ С‚РµСЃС‚Р°.</instructions>
+   <instructions>Р Р°Р·РѕРіСЂРµР№С‚Рµ РІР°С„РµР»СЊРЅРёС†Сѓ РїРѕ РёРЅСЃС‚СЂСѓРєС†РёРё Рє РЅРµР№. РЈ РјРµРЅСЏ РѕС‡РµРЅСЊ СЃС‚Р°СЂР°СЏ, РµС‰Рµ СЃРѕРІРµС‚СЃРєРёС… РІСЂРµРјРµРЅ СЌР»РµРєС‚СЂРѕРІР°С„РµР»СЊРЅРёС†Р°. РћРЅР° РјРѕР¶РµС‚ Рё РЅРµ РѕС‡РµРЅСЊ РєСЂР°СЃРёРІР°СЏ, РЅРѕ РїРµС‡РµС‚ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ!</instructions>
+   <instructions>РџРµРєРёС‚Рµ РІР°С„Р»Рё РЅРµСЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚ РґРѕ Р·РѕР»РѕС‚РёСЃС‚РѕРіРѕ С†РІРµС‚Р°. РћСЃС‚РѕСЂРѕР¶РЅРѕ РѕС‚РєСЂРѕР№С‚Рµ РІР°С„РµР»СЊРЅРёС†Сѓ, РѕРЅР° РѕС‡РµРЅСЊ РіРѕСЂСЏС‡Р°СЏ! РЎРЅРёРјРёС‚Рµ РІР°С„Р»СЋ Р»РѕРїР°С‚РєРѕР№. Р“РѕСЂСЏС‡Р°СЏ РѕРЅР° РѕС‡РµРЅСЊ РјСЏРіРєР°СЏ, РєР°Рє Р±Р»РёРЅС‡РёРє.</instructions>
+   <name>Р’Р°С„Р»Рё С…СЂСѓСЃС‚СЏС‰РёРµ РІ РІР°С„РёР»СЊРЅРёС†Рµ</name>
+   <unique_code>c9681682ec594a14ba2a81ba68ed67e1</unique_code>
 </receipt_model>
 </root>

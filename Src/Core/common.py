@@ -24,7 +24,7 @@ class common:
     
     """
     Получить полный список полей любой модели
-    is_common = True - исключить из списка словари и списки
+        - is_common = True - исключить из списка словари и списки
     """
     @staticmethod
     def get_fields(source, is_common: bool = False) -> list:

@@ -10,6 +10,7 @@ from Src.Core.base_models import base_model_code, base_model_name
 from Src.Models.range import range_model
 from Src.Models.group import group_model
 from Src.Models.nomenclature import nomenclature_model
+from Src.Models.ingredient import ingredient_model
 
 import datetime
 
@@ -56,6 +57,9 @@ class basic_convertor(abstract_convert):
 """
 class datetime_convertor(abstract_convert):
     
+    """
+    Сериализовать дату 
+    """
     def serialize(self, field: str,  object):
       
         super().serialize( field, object)
@@ -65,11 +69,15 @@ class datetime_convertor(abstract_convert):
           return None
 
         try:
-            return {  field: object.strftime('%Y-%m-%d') }
+            return {  field: object.strftime('%Y-%m-%d %H:%M') }
         except Exception as ex:
             self.set_exception(ex)    
 
+    """
+    Десериализовать дату
+    """
     def deserialize(self, data , field:str,  instance ):
+        # На будущее
         pass
 
 """
@@ -77,12 +85,18 @@ class datetime_convertor(abstract_convert):
 """
 class reference_convertor(abstract_convert):
     
+    """
+    Сериализовать модель
+    """
     def serialize(self, field: str, object: abstract_model) -> dict:
         super().serialize(field, object)
 
         factory = convert_factory()
         return factory.serialize(object)
     
+    """
+    Десериализовать модель
+    """
     def deserialize(self, data , field:str,  instance ):
         super().deserialize(data, field, instance)
         if self.is_error: 
@@ -218,7 +232,8 @@ class convert_factory(abstract_logic):
             found_key = list(filter(lambda x: f"{field}" in x, data.keys() ))
 
             if len(found_annotation) > 0 and len(found_key) > 0:
-                # Модель
+
+                # Определим тип модели
                 annotation_type = annotations[found_annotation[0]]
                 if type(annotation_type) is abc.ABCMeta:
                     type_name = annotation_type.__name__
@@ -227,7 +242,7 @@ class convert_factory(abstract_logic):
 
                 dest_data = data[found_key[0]]
                 if dest_data is not None and type_name in models:
-                    # Ссылочный тип
+                    # Модель
                     dest_instance = eval(f"{type_name}()")
                     convertor = self._maps[ type(instance) ]()
                     convertor.deserialize(dest_data , field,  dest_instance)
@@ -244,7 +259,7 @@ class convert_factory(abstract_logic):
             else:
                 self.set_exception( operation_exception(f"Поле {field} не имеет описание типа в модели!"))    
 
-        # Загрузим списочные поля
+        # Загрузим списочные поля вызывая метод модели
         instance.deserialize(data)
 
     def set_exception(self, ex: Exception):
