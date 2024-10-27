@@ -3,145 +3,145 @@
         "cooking_period": 10,
         "cooking_portion": 10,
         "ingredients": {
-            "b938cea6f8f646d6acf6352d3f906b3e": {
+            "379121b75d104055b513932885d1331b": {
                 "nomenclature": {
                     "group": {
                         "name": "—ырье",
-                        "unique_code": "b6269a341afa46b79a7baf0399b4970a"
+                        "unique_code": "d173240df3c14f7dbb0a26eff7486458"
                     },
                     "name": "ѕшенична€ мука",
                     "range": {
                         "base": {
                             "base": null,
                             "name": "грамм",
-                            "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                            "unique_code": "e998df4e69e54b93ac73163537f07d95",
                             "value": 1
                         },
                         "name": "кг",
-                        "unique_code": "397b6bc3ce024dde8b74c045c9eb16f8",
+                        "unique_code": "73aca0a6e40e4645801cec4942dbe3c8",
                         "value": 1000
                     },
-                    "unique_code": "b938cea6f8f646d6acf6352d3f906b3e"
+                    "unique_code": "379121b75d104055b513932885d1331b"
                 },
                 "quantity": 100,
                 "range": {
                     "base": null,
                     "name": "грамм",
-                    "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                    "unique_code": "e998df4e69e54b93ac73163537f07d95",
                     "value": 1
                 },
-                "unique_code": "f82b9676288f4fe9923bdbd694204272"
+                "unique_code": "7dc485c2ba52459d882f48a93bc3102e"
             },
-            "88d4274ce62c420982ebf88cd364865c": {
+            "bb217a2d8603429da10fd509c7fad279": {
                 "nomenclature": {
                     "group": {
                         "name": "—ырье",
-                        "unique_code": "b6269a341afa46b79a7baf0399b4970a"
+                        "unique_code": "d173240df3c14f7dbb0a26eff7486458"
                     },
                     "name": "—ахар",
                     "range": {
                         "base": {
                             "base": null,
                             "name": "грамм",
-                            "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                            "unique_code": "e998df4e69e54b93ac73163537f07d95",
                             "value": 1
                         },
                         "name": "кг",
-                        "unique_code": "397b6bc3ce024dde8b74c045c9eb16f8",
+                        "unique_code": "73aca0a6e40e4645801cec4942dbe3c8",
                         "value": 1000
                     },
-                    "unique_code": "88d4274ce62c420982ebf88cd364865c"
+                    "unique_code": "bb217a2d8603429da10fd509c7fad279"
                 },
                 "quantity": 80,
                 "range": {
                     "base": null,
                     "name": "грамм",
-                    "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                    "unique_code": "e998df4e69e54b93ac73163537f07d95",
                     "value": 1
                 },
-                "unique_code": "6d0cdebb9ec64265a217c36e4fbadab1"
+                "unique_code": "d9bf401f655941be94192c753a83d9c7"
             },
-            "fa9fe9e8cc1c49f78b1ab1baa9b600ff": {
+            "0ab4e9b8945e48e7a2d3b1281afc108c": {
                 "nomenclature": {
                     "group": {
                         "name": "—ырье",
-                        "unique_code": "b6269a341afa46b79a7baf0399b4970a"
+                        "unique_code": "d173240df3c14f7dbb0a26eff7486458"
                     },
                     "name": "—ливочное масло",
                     "range": {
                         "base": {
                             "base": null,
                             "name": "грамм",
-                            "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                            "unique_code": "e998df4e69e54b93ac73163537f07d95",
                             "value": 1
                         },
                         "name": "кг",
-                        "unique_code": "397b6bc3ce024dde8b74c045c9eb16f8",
+                        "unique_code": "73aca0a6e40e4645801cec4942dbe3c8",
                         "value": 1000
                     },
-                    "unique_code": "fa9fe9e8cc1c49f78b1ab1baa9b600ff"
+                    "unique_code": "0ab4e9b8945e48e7a2d3b1281afc108c"
                 },
                 "quantity": 70,
                 "range": {
                     "base": null,
                     "name": "грамм",
-                    "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                    "unique_code": "e998df4e69e54b93ac73163537f07d95",
                     "value": 1
                 },
-                "unique_code": "f5155e35039a4679a3cfd8b60f78b06b"
+                "unique_code": "0391b0915a704613bd09545627e23c2c"
             },
-            "e7e494982b014d039417234c0df3ecfe": {
+            "efbcdf59998248eaa9b281bd4986485a": {
                 "nomenclature": {
                     "group": {
                         "name": "—ырье",
-                        "unique_code": "b6269a341afa46b79a7baf0399b4970a"
+                        "unique_code": "d173240df3c14f7dbb0a26eff7486458"
                     },
                     "name": "яйцо",
                     "range": {
                         "base": null,
                         "name": "штука",
-                        "unique_code": "eec3b84cfd5b4382a5cd567ac0c0f4aa",
+                        "unique_code": "655200198a0147ad961fba172b7fe558",
                         "value": 1
                     },
-                    "unique_code": "e7e494982b014d039417234c0df3ecfe"
+                    "unique_code": "efbcdf59998248eaa9b281bd4986485a"
                 },
                 "quantity": 1,
                 "range": {
                     "base": null,
                     "name": "штука",
-                    "unique_code": "eec3b84cfd5b4382a5cd567ac0c0f4aa",
+                    "unique_code": "655200198a0147ad961fba172b7fe558",
                     "value": 1
                 },
-                "unique_code": "34ae62a372e24c979816f09321fa93e5"
+                "unique_code": "58a7d70f594546c3835570a362a408ec"
             },
-            "7a00e7b3b8bf4b5e93e38d11ae19b599": {
+            "637b3f60b187410daf00bbf31fa8ca86": {
                 "nomenclature": {
                     "group": {
                         "name": "—ырье",
-                        "unique_code": "b6269a341afa46b79a7baf0399b4970a"
+                        "unique_code": "d173240df3c14f7dbb0a26eff7486458"
                     },
                     "name": "¬анилин",
                     "range": {
                         "base": {
                             "base": null,
                             "name": "грамм",
-                            "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                            "unique_code": "e998df4e69e54b93ac73163537f07d95",
                             "value": 1
                         },
                         "name": "кг",
-                        "unique_code": "397b6bc3ce024dde8b74c045c9eb16f8",
+                        "unique_code": "73aca0a6e40e4645801cec4942dbe3c8",
                         "value": 1000
                     },
-                    "unique_code": "7a00e7b3b8bf4b5e93e38d11ae19b599"
+                    "unique_code": "637b3f60b187410daf00bbf31fa8ca86"
                 },
                 "quantity": 5,
                 "range": {
                     "base": null,
                     "name": "грамм",
-                    "unique_code": "78045d799d2a48d38c0f48a8830eaa15",
+                    "unique_code": "e998df4e69e54b93ac73163537f07d95",
                     "value": 1
                 },
-                "unique_code": "bd215002c98b40e9bfdbf24c09ccb3c8"
+                "unique_code": "5a8f994e76324f10b963d66a33ba4c28"
             }
         },
         "instructions": [
@@ -155,6 +155,6 @@
             "ѕеките вафли несколько минут до золотистого цвета. ќсторожно откройте вафельницу, она очень гор€ча€! —нимите вафлю лопаткой. √ор€ча€ она очень м€гка€, как блинчик."
         ],
         "name": "¬афли хруст€щие в вафильнице",
-        "unique_code": "90923e3f915a4b5bb6c7e45e0aec51c4"
+        "unique_code": "875b0bc08a47457095232bc892aa3cf1"
     }
 ]

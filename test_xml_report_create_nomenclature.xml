@@ -3,91 +3,91 @@
 <nomenclature_model>
    <group>
       <name>—ырье</name>
-      <unique_code>8796dff227ed4096b0dac0a28b6b26f5</unique_code>
+      <unique_code>e240101a16194bd58cd606626bad64a6</unique_code>
    </group>
    <name>ѕшенична€ мука</name>
    <range>
       <base>
          <base>None</base>
          <name>грамм</name>
-         <unique_code>f5e4e6893f994e128113469df7953682</unique_code>
+         <unique_code>d5c6495d68774cf2b52af6ecfd7eda74</unique_code>
          <value>1</value>
       </base>
       <name>кг</name>
-      <unique_code>17d4436112b340229c8430c5333861d7</unique_code>
+      <unique_code>0b454c952b514c169699e7f05b72dce1</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>a5dd3b7c7526460c93b7f00f4b307cd8</unique_code>
+   <unique_code>73629b6f70e9458a96649364565db177</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
       <name>—ырье</name>
-      <unique_code>8796dff227ed4096b0dac0a28b6b26f5</unique_code>
+      <unique_code>e240101a16194bd58cd606626bad64a6</unique_code>
    </group>
    <name>—ахар</name>
    <range>
       <base>
          <base>None</base>
          <name>грамм</name>
-         <unique_code>f5e4e6893f994e128113469df7953682</unique_code>
+         <unique_code>d5c6495d68774cf2b52af6ecfd7eda74</unique_code>
          <value>1</value>
       </base>
       <name>кг</name>
-      <unique_code>17d4436112b340229c8430c5333861d7</unique_code>
+      <unique_code>0b454c952b514c169699e7f05b72dce1</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>b3139cf89c394b46ae07f90e487f6668</unique_code>
+   <unique_code>21120f886e3842c9b8d5eee8c6022c3f</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
       <name>—ырье</name>
-      <unique_code>8796dff227ed4096b0dac0a28b6b26f5</unique_code>
+      <unique_code>e240101a16194bd58cd606626bad64a6</unique_code>
    </group>
    <name>—ливочное масло</name>
    <range>
       <base>
          <base>None</base>
          <name>грамм</name>
-         <unique_code>f5e4e6893f994e128113469df7953682</unique_code>
+         <unique_code>d5c6495d68774cf2b52af6ecfd7eda74</unique_code>
          <value>1</value>
       </base>
       <name>кг</name>
-      <unique_code>17d4436112b340229c8430c5333861d7</unique_code>
+      <unique_code>0b454c952b514c169699e7f05b72dce1</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>bfaacab1ec784c68b5d5706e7df8f58a</unique_code>
+   <unique_code>0be3350acb1e4c54b378115a4f8fa3aa</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
       <name>—ырье</name>
-      <unique_code>8796dff227ed4096b0dac0a28b6b26f5</unique_code>
+      <unique_code>e240101a16194bd58cd606626bad64a6</unique_code>
    </group>
    <name>яйцо</name>
    <range>
       <base>None</base>
       <name>штука</name>
-      <unique_code>4a9d376717e14510a4802755d4ea37e8</unique_code>
+      <unique_code>0a6261fd16af45de94eed3ca8ce1a2aa</unique_code>
       <value>1</value>
    </range>
-   <unique_code>808a161eec0a49bc96a4c313953ff8d0</unique_code>
+   <unique_code>166b8259af9a45469f00419ff55a1cd3</unique_code>
 </nomenclature_model>
 <nomenclature_model>
    <group>
       <name>—ырье</name>
-      <unique_code>8796dff227ed4096b0dac0a28b6b26f5</unique_code>
+      <unique_code>e240101a16194bd58cd606626bad64a6</unique_code>
    </group>
    <name>¬анилин</name>
    <range>
       <base>
          <base>None</base>
          <name>грамм</name>
-         <unique_code>f5e4e6893f994e128113469df7953682</unique_code>
+         <unique_code>d5c6495d68774cf2b52af6ecfd7eda74</unique_code>
          <value>1</value>
       </base>
       <name>кг</name>
-      <unique_code>17d4436112b340229c8430c5333861d7</unique_code>
+      <unique_code>0b454c952b514c169699e7f05b72dce1</unique_code>
       <value>1000</value>
    </range>
-   <unique_code>cfeacf5726664085a47c56a219bdc57c</unique_code>
+   <unique_code>f6c8fa116e1148f898cb0ae383877d52</unique_code>
 </nomenclature_model>
 </root>

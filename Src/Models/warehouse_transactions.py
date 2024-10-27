@@ -39,7 +39,7 @@ class warehouse_transaction(base_model_name):
 
     @quantity.setter
     def quantity(self, value: float):
-        # validator
+        validator.validate(value, float)
         self.__quantity = value
 
     @property

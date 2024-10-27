@@ -17,6 +17,9 @@ class base_model_code(abstract_model):
     """
     def deserialize(self, data: dict):
         return super().deserialize(data)
+    
+    def __hash__(self):
+        return hash(self.name)
 
 """
 Базовый класс для наследования с поддержкой сравнения по наименованию
@@ -47,3 +50,6 @@ class base_model_name(abstract_model):
     """
     def deserialize(self, data: dict):
         return super().deserialize(data)
+    
+    def __hash__(self):
+        return hash(self.name)

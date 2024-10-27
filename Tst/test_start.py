@@ -75,15 +75,23 @@ class test_start(unittest.TestCase):
     Проверить состав стартовых элементов
     """
     def test_create_warehouse(self):
-        warehouses = self.data[self.warehouse_key()]
+        reposity = data_reposity()
+        start = start_service(reposity)
+        start.create()
+        
+        warehouses = reposity.data[reposity.warehouse_key()]
         assert len(warehouses) > 0, "Склад не был создан"
 
-        assert warehouses[0].address == "Иркутск"
-        assert warehouses[1].address == "Новосибирск"
+        assert warehouses[0].address == "test_address_1"
+        assert warehouses[1].address == "test_address_2"
 
     def test_create_transaction(self):
-        transactions = self.data[self.transaction_key()]
-        assert len(transactions) == 100, "Транзакции не были созданы или их количество неверное"
+        reposity = data_reposity()
+        start = start_service(reposity)
+        start.create()
+        
+        transactions = reposity.data[reposity.warehouse_transaction_key()]
+        assert len(transactions) == 3, "Транзакции не были созданы или их количество неверное"
 
         transaction = transactions[0]
         assert transaction.warehouse is not None, "Склад у транзакции не установлен"

@@ -9,6 +9,7 @@ from Src.Models.receipt import receipt_model
 from Src.Models.ingredient import ingredient_model
 from Src.Models.warehouse import warehouse
 from Src.Models.warehouse_transactions import warehouse_transaction
+from datetime import datetime
 
 """
 Сервис для реализации первого старта приложения
@@ -138,31 +139,34 @@ class start_service(abstract_logic):
 
         _list.append(
             warehouse_transaction.create(
-                name="test_warehouse_transaction_1",
                 warehouse=list_warehouse[0],
                 nomenclature=list_nomenclature[0],
-                quantity=3,
-                range=list_nomenclature[0].range
+                quantity=1.0,
+                transaction_type=transaction_type.USE,
+                range=list_nomenclature[0].range,
+                period=datetime.now()
             )
         )
 
         _list.append(
             warehouse_transaction.create(
-                name="test_warehouse_transaction_2",
                 warehouse=list_warehouse[1],
                 nomenclature=list_nomenclature[1],
-                range=list_nomenclature[1].range
+                quantity=2.0,
+                transaction_type=transaction_type.USE,
+                range=list_nomenclature[1].range,
+                period=datetime.now()
             )
         )
 
         _list.append(
             warehouse_transaction.create(
-                name="test_warehouse_transaction_2",
                 warehouse=list_warehouse[0],
                 nomenclature=list_nomenclature[0],
                 range=list_nomenclature[1].range,
-                quantity=2,
-                transaction_type=transaction_type.COME
+                quantity=3.0,
+                transaction_type=transaction_type.COME,
+                period=datetime.now()
             )
         )
 

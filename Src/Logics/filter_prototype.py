@@ -23,7 +23,7 @@ class filter_prototype(abstract_prototype):
         validator.validate(condition, condition_type)
 
         if len(self.data) == 0:
-            return filter_prototype()
+            return filter_prototype(self.data)
         
         if condition not in self.__maps.keys():
             raise operation_exception(f"Тип сравнения {condition} не поддерживается!")

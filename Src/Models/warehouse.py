@@ -15,7 +15,6 @@ class warehouse(base_model_name):
 
     @staticmethod
     def create(
-            name="test_warehouse",
             address="test_address"
     ):
         item_warehouse = warehouse()
