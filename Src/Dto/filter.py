@@ -2,6 +2,7 @@ from Src.Core.base_models import base_model_code
 from Src.Core.condition_type import condition_type
 from Src.Core.convert_factory import convert_factory
 from Src.Core.validator import argument_exception, validator
+from datetime import datetime
 
 
 """
@@ -107,11 +108,3 @@ class filter(base_model_code):
         instance.items.append(item2)
 
         return instance
-
-
-        
-
-
-
-
-

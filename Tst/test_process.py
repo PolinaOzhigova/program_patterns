@@ -8,6 +8,7 @@ from Src.Models.warehouse_transactions import warehouse_transaction
 from Src.Models.warehouse_stock import warehouse_stock
 from Src.Logics.turnover_process import turnover_process
 from datetime import datetime
+from Src.settings_manager import settings_manager
 
 
 class test_processes(unittest.TestCase):
@@ -16,6 +17,8 @@ class test_processes(unittest.TestCase):
         Тест оборота по приходу и расходу
         """
         # Подготовка
+        manager1 = settings_manager()
+        manager1.open("../settings.json")
         reposity = data_reposity()
         start = start_service(reposity)
         start.create()
