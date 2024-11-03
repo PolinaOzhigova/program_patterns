@@ -49,6 +49,22 @@ class data_reposity(abstract_logic):
     
     
     """
+    Ключ для хранения складов
+    """
+    @staticmethod
+    def warehouse_key() -> str:
+        return "warehouse"
+    
+    """
+    Ключ для хранения транзакций складов
+    """
+    @staticmethod
+    def warehouse_transaction_key() -> str:
+        return "warehouse_transaction"
+
+
+    
+    """
     Получить список всех ключей
     Источник: https://github.com/Alyona1619
     """
@@ -68,7 +84,3 @@ class data_reposity(abstract_logic):
     """
     def set_exception(self, ex: Exception):
         self._inner_set_exception(ex)    
-    
-
-    
-

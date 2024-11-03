@@ -1,5 +1,6 @@
 from Src.start_service import start_service
 from Src.data_reposity import data_reposity
+from Src.Core.transation_type import transaction_type
 import unittest
 
 
@@ -70,15 +71,38 @@ class test_start(unittest.TestCase):
         assert found[0].range is not None
         assert found[0].group is not None
 
+    """
+    Проверить состав стартовых элементов
+    """
+    def test_create_warehouse(self):
+        reposity = data_reposity()
+        start = start_service(reposity)
+        start.create()
+        
+        warehouses = reposity.data[reposity.warehouse_key()]
+        assert len(warehouses) > 0, "Склад не был создан"
+
+        assert warehouses[0].address == "test_address_1"
+        assert warehouses[1].address == "test_address_2"
+
+    def test_create_transaction(self):
+        reposity = data_reposity()
+        start = start_service(reposity)
+        start.create()
+        
+        transactions = reposity.data[reposity.warehouse_transaction_key()]
+        assert len(transactions) == 3, "Транзакции не были созданы или их количество неверное"
+
+        transaction = transactions[0]
+        assert transaction.warehouse is not None, "Склад у транзакции не установлен"
+        assert transaction.nomenclature is not None, "Номенклатура транзакции не установлена"
+        assert transaction.quantity > 0, "Количество транзакции должно быть больше 0"
+        assert transaction.transaction_type in list(transaction_type), "Неверный тип транзакции"
+        assert transaction.range is not None, "Единица измерения транзакции не установлена"
+        assert transaction.period is not None, "Период транзакции не установлен"
 
 
 
 
 if __name__ == '__main__':
-    unittest.main()   
-
-
-
-
-
-
+    unittest.main()
