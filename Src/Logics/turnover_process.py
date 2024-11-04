@@ -9,9 +9,17 @@ from datetime import datetime
 from Src.settings_manager import settings_manager
 
 class turnover_process(abstract_process):
-
-    def turnover_date(self, date_start, date_end, transactions: list[warehouse_transaction]) -> list[warehouse_stock]:
+    def execute(self, transactions: list[warehouse_transaction]) -> list[warehouse_stock]:
+        manager = settings_manager()
         reposity = data_reposity()
+        turns1 = 0
+        if reposity.data[reposity.turnover_process_key()] != None:
+            turns1 = reposity.data[reposity.turnover_process_key()]
+            date_start = [reposity.data_block_key()]
+            date_end = datetime.now().strftime("%Y-%m-%d")
+        else: 
+            date_start = datetime(1900,1,1)
+            date_end = manager.settings.data_block
         result = {}
         for transaction in transactions:
             validator.validate(transaction, warehouse_transaction)
@@ -33,10 +41,6 @@ class turnover_process(abstract_process):
 
         reposity.data[reposity.data_block_key()] = date_end
         reposity.data[reposity.turnover_process_key()] = turns
-        return turns
-    
-    def execute(self, transactions: list[warehouse_transaction]) -> list[warehouse_stock]:
-        manager = settings_manager()
-        turn1 = self.turnover_date(datetime(1900,1,1), manager.settings.data_block, transactions)
-
-        return turn1
+        if turns1 == 0:
+            return self.execute(transactions)
+        return (turns+turns1)
