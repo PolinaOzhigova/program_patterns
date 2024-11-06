@@ -10,13 +10,13 @@ from Src.settings_manager import settings_manager
 
 class turnover_process(abstract_process):
     def execute(self, transactions: list[warehouse_transaction]) -> list[warehouse_stock]:
-        manager = settings_manager()
         reposity = data_reposity()
-        turns1 = 0
-        if reposity.data[reposity.turnover_process_key()] != None:
-            turns1 = reposity.data[reposity.turnover_process_key()]
-            date_start = [reposity.data_block_key()]
-            date_end = datetime.now().strftime("%Y-%m-%d")
+        manager = settings_manager()
+        turns1 = None
+        if "turnover_process_key" in reposity.data.keys():
+            turns1 = reposity.data[data_reposity.turnover_process_key()]
+            date_start = [manager.settings.data_block]
+            date_end = datetime.now()
         else: 
             date_start = datetime(1900,1,1)
             date_end = manager.settings.data_block
@@ -24,8 +24,9 @@ class turnover_process(abstract_process):
         for transaction in transactions:
             validator.validate(transaction, warehouse_transaction)
             warehouse = transaction.warehouse
-            if warehouse_transaction.period < date_start or warehouse_transaction.period > date_end:
+            if transaction.period < date_start or transaction.period > date_end:
                 continue
+
             nomenclature = transaction.nomenclature
             range_unit = transaction.range
             key = (warehouse, nomenclature, range_unit)
@@ -39,8 +40,7 @@ class turnover_process(abstract_process):
                                                  range=key[2])
             turns.append(turn)
 
-        reposity.data[reposity.data_block_key()] = date_end
-        reposity.data[reposity.turnover_process_key()] = turns
-        if turns1 == 0:
-            return self.execute(transactions)
-        return (turns+turns1)
+        reposity.data[data_reposity.turnover_process_key()] = turns
+        if turns1 != None:
+            turns.extend(turns1)
+        return turns

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from Src.Core.validator import validator
-
+from Src.Core.event_type import event_type
 
 """
 Абстрактный класс для обработки логики
@@ -37,4 +37,10 @@ class abstract_logic(ABC):
     @abstractmethod
     def set_exception(self, ex: Exception):
         pass
+
+    """ 
+    Обработка события
+    """
+    def handle_event(self, type:event_type, params):
+        validator.validate(type, event_type)
        

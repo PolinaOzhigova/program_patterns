@@ -108,6 +108,7 @@ def get_filtered_report(entity:str):
 def set_data_block(data_block: datetime):
     validator.validate(data_block, datetime)
     settings_model.data_block(data_block)
+    settings_model.save(data_block, "settings.py")
     return 200
     
 

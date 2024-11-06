@@ -37,6 +37,18 @@ class settings_report_handler(base_model_code):
         validator.validate(value, str)
         self.__handler = value
 
+    """
+    Фабричный метод
+    """
+    @staticmethod
+    def create(type: format_reporting, handler:str):
+        result = settings_report_handler()
+        result.type = type
+        result.handler = handler
+
+        return result
+
+
 
 """
 Настройки

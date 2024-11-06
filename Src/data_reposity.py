@@ -61,21 +61,13 @@ class data_reposity(abstract_logic):
     @staticmethod
     def warehouse_transaction_key() -> str:
         return "warehouse_transaction"
-
-    """
-    Ключ для хранения data_block
-    """
-    @staticmethod
-    def data_block_key() -> datetime:
-        return "data_block_key"
     
     """
     Ключ для хранения расчета процессов
     """
     @staticmethod
-    def turnover_process_key() -> datetime:
-        return "turnover_process_key"
-
+    def turnover_process_key():
+        return "turnover_process"
     
     """
     Получить список всех ключей

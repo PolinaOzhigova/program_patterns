@@ -53,12 +53,17 @@ class warehouse_transaction(base_model_name):
 
     @property
     def period(self) -> datetime:
+        # print("period property")
+        # print(type(self.__period))
         return self.__period
 
     @period.setter
     def period(self, value: datetime):
         validator.validate(value, datetime)
+        # print("period setter")
+        # print(type(value))
         self.__period = value
+
 
     @property
     def transaction_type(self) -> transaction_type:
