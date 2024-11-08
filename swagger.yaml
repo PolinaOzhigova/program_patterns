@@ -133,6 +133,43 @@ paths:
         properties:
           items:
             $ref: '#/definitions/filter'
+
+  /app/date_block:
+    get:
+      summary: Получить текущую дату блокировки
+      operationId: main.get_data_block
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+        500:
+          description: Ошибка на сервере
+        default:
+          description: Неизвестная ошибка
+    post:
+      summary: Изменить дату блокировки
+      operationId: main.set_data_block
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          type: string
+          name: data_block
+          description: Новая дата блокировки
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+        500:
+          description: Ошибка на сервере
+        default:
+          description: Неизвестная ошибка
+
         
            
 definitions:

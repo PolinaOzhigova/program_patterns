@@ -5,6 +5,8 @@ from Src.Core.abstract_logic import abstract_logic
 from Src.Core.common import common
 from Src.Core.validator import validator, operation_exception, argument_exception
 from Src.Core.base_models import base_model_code, base_model_name
+from Src.Core.format_reporting import format_reporting
+from Src.Core.event_type import event_type
 
 # Подключаем модели
 from Src.Models.range import range_model
@@ -12,18 +14,15 @@ from Src.Models.group import group_model
 from Src.Models.nomenclature import nomenclature_model
 from Src.Models.ingredient import ingredient_model
 
-import datetime
+from datetime import datetime
 
 
 
 """
-Конвертация в словарь простого объекта
+Конвертация простого объекта
 """
 class basic_convertor(abstract_convert):
    
-   """
-   Сериализовать простой тип данных
-   """
    def serialize(self, field: str, object) -> dict:
       super().serialize( field, object)
       
@@ -38,9 +37,7 @@ class basic_convertor(abstract_convert):
 
       return None   
    
-   """
-   Десериализовать простой тип данных
-   """
+   
    def deserialize(self, data , field:str,  instance):
         super().deserialize(data, field, instance)
         if self.is_error: 
@@ -52,14 +49,51 @@ class basic_convertor(abstract_convert):
        
         setattr(instance, field, data)
 
+
+   def handle_event(self, type: event_type, params ):
+        pass
+
 """
-Конвертация в словарь даты
+Конвертация перечисления
+"""
+class enum_convertor(abstract_convert):
+   def serialize(self, field: str, object) -> dict:
+      super().serialize( field, object)
+      
+      if not isinstance(object, (format_reporting)):
+          self.error_text = f"Некорректный тип данных передан для конвертации. Ожидается: (format_reporting). Передан: {type(object)}"
+          return None
+
+      try:
+            return { field: object.value }
+      except Exception as ex:
+            self.set_exception(ex)  
+
+      return None   
+   
+   def deserialize(self, data , field:str,  instance):
+        super().deserialize(data, field, instance)
+        if self.is_error: 
+            return None
+        
+        if not isinstance(data, (format_reporting)):
+          self.error_text = f"Некорректный тип данных передан для конвертации. Ожидается: (format_reporting). Передан: {type(data)}"
+          return None
+       
+        setattr(instance, field, data)
+
+    
+   def handle_event(self, type: event_type, params ):
+        pass   
+
+
+
+
+"""
+Конвертация даты
 """
 class datetime_convertor(abstract_convert):
-    
-    """
-    Сериализовать дату 
-    """
+
     def serialize(self, field: str,  object):
       
         super().serialize( field, object)
@@ -73,11 +107,11 @@ class datetime_convertor(abstract_convert):
         except Exception as ex:
             self.set_exception(ex)    
 
-    """
-    Десериализовать дату
-    """
     def deserialize(self, data , field:str,  instance ):
         # На будущее
+        pass
+
+    def handle_event(self, type: event_type, params ):
         pass
 
 """
@@ -85,18 +119,12 @@ class datetime_convertor(abstract_convert):
 """
 class reference_convertor(abstract_convert):
     
-    """
-    Сериализовать модель
-    """
     def serialize(self, field: str, object: abstract_model) -> dict:
         super().serialize(field, object)
 
         factory = convert_factory()
         return factory.serialize(object)
     
-    """
-    Десериализовать модель
-    """
     def deserialize(self, data , field:str,  instance ):
         super().deserialize(data, field, instance)
         if self.is_error: 
@@ -105,6 +133,10 @@ class reference_convertor(abstract_convert):
         # Простое заполнение данными
         factory = convert_factory()
         factory.deserialize(data, instance)
+
+    
+    def handle_event(self, type: event_type, params ):
+        pass    
 
 
 """
@@ -115,11 +147,12 @@ class convert_factory(abstract_logic):
     
     def __init__(self) -> None:
         # Связка с простыми типами
-        self._maps[datetime.datetime] = datetime_convertor
+        self._maps[datetime] = datetime_convertor
         self._maps[int] = basic_convertor
         self._maps[float] = basic_convertor
         self._maps[str] = basic_convertor
         self._maps[bool] = basic_convertor
+        self._maps[format_reporting] = enum_convertor
         
         # Связка для всех моделей
         for  inheritor in base_model_name.__subclasses__():
@@ -264,3 +297,6 @@ class convert_factory(abstract_logic):
 
     def set_exception(self, ex: Exception):
         self._inner_set_exception(ex)    
+
+    def handle_event(self, type: event_type, params ):
+        super().handle_event(type, params)       

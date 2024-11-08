@@ -2,6 +2,7 @@ from Src.Core.base_models import base_model_code
 from Src.Core.convert_factory import convert_factory
 from Src.Core.format_reporting import format_reporting
 from Src.Core.validator import validator, argument_exception
+from datetime import datetime
 
 
 """
@@ -36,6 +37,18 @@ class settings_report_handler(base_model_code):
         validator.validate(value, str)
         self.__handler = value
 
+    """
+    Фабричный метод
+    """
+    @staticmethod
+    def create(type: format_reporting, handler:str):
+        result = settings_report_handler()
+        result.type = type
+        result.handler = handler
+
+        return result
+
+
 
 """
 Настройки
@@ -45,6 +58,7 @@ class settings_model(base_model_code):
     __inn = ""
     __default_report_format:format_reporting = format_reporting.CSV
     __report_handlers:list[settings_report_handler] = []
+    __data_block = None
 
     """
     Наименование организации
@@ -115,9 +129,15 @@ class settings_model(base_model_code):
                 instance = settings_report_handler()
                 factory.deserialize(item, instance)
                 self.report_handlers.append(instance)
+    """
+    Дата блокировки
+    """
+    @property
+    def data_block(self):
+        return self.__data_block
     
-
-
-
-
-
+    @data_block.setter
+    def data_block(self, value:datetime):
+        validator.validate(value, datetime)
+        self.__data_block = value
+        

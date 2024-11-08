@@ -11,6 +11,8 @@ from Src.start_service import start_service
 from Src.Reports.report_factory import report_factory
 from Src.Dto.filter import filter
 from Src.Core.condition_type import condition_type
+from datetime import datetime
+from Src.Models.settings import settings_model
 
 app = connexion.FlaskApp(__name__)
 
@@ -99,6 +101,24 @@ def get_filtered_report(entity:str):
     report.create(data)
     return report.result
 
+"""
+Изменить дату блокировки
+"""
+@app.route("/app/data_block//<data_block>", methods=["POST"])
+def set_data_block(data_block: datetime):
+    validator.validate(data_block, datetime)
+    settings_model.data_block(data_block)
+    settings_model.save(data_block, "settings.py")
+    return 200
+    
+
+"""
+Получить дату блокировки
+"""
+@app.route("/app/data_block", methods=["GET"])
+def get_data_block():
+    return {"dateblock": settings_model.data_block}
+    
 
 
 if __name__ == '__main__':

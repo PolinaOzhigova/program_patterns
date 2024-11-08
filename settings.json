@@ -15,5 +15,6 @@
             "type": 3,
             "handler": "json_report"
         }         
-    ]
+    ],
+    "data_block": "2024-10-05"
 }

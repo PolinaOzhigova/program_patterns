@@ -3,6 +3,7 @@ from Src.Core.abstract_logic import abstract_logic
 from Src.Logics.filter_prototype import filter_prototype
 from Src.Dto.filter import filter
 from Src.Core.validator import validator
+from Src.Core.event_type import event_type
 
 
 """
@@ -28,5 +29,6 @@ class filter_service(abstract_logic):
     def set_exception(self, ex: Exception):
         self._inner_set_exception(ex)    
         
-
+    def handle_event(self, type:event_type, params):
+        super().handle_event(type, params)
     
