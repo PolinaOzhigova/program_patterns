@@ -11,8 +11,8 @@ class observe(absrtact_observe) :
         self.__events[event_type.CHANGE_NOMENCLATURE] = self.change_event
         self.__events[event_type.DELETE_NOMENCLATURE] = self.delete_event
 
-    def handle_event(_type, params):
-        pass
+    def handle_event(self, _type, params):
+        self.__events[_type](params)
 
     def change_event(self, params):
         all_data = self.__reposity.data[data_reposity.receipt_key]
