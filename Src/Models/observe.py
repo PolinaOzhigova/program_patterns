@@ -24,7 +24,17 @@ class observe(absrtact_observe) :
 
     def delete_event(self, params):
         all_data = self.__reposity.data[data_reposity.receipt_key]
+
+        stop_word = False
         for receipt in all_data:
+            if stop_word:
+                break
             for ing in receipt.ingridients:
+                if stop_word:
+                    break
                 for nomenc in ing.nomeclature:
-                    pass
+                    if(nomenc == params):
+                        stop_word = True
+        else:
+            all_data.remove(params)
+
