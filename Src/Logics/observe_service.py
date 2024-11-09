@@ -1,7 +1,7 @@
 from Src.Core.abstract_logic import abstract_logic
 from Src.Core.event_type import event_type
 
-class observe_service:
+class observe_service():
     observers = []
 
     @staticmethod
