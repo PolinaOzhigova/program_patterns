@@ -17,8 +17,7 @@ class nomenclature_service():
     
     def put(self, item_nomenclature):
         self.__reposity.data[data_reposity.nomenclature_key()].append(item_nomenclature)
-        return
-
+        
     def get(self, id_nomenclature):
         all_data = self.__reposity.data[data_reposity.nomenclature_key()]
         prototype = filter_prototype(all_data)
@@ -30,7 +29,6 @@ class nomenclature_service():
         for attr, value in vars(item_nomenclature).items():
             setattr(old_nomenclature, attr, value)
         observe_service.raise_event(event_type.CHANGE_NOMENCLATURE, item_nomenclature)
-        return
 
     def delete(self, id_nomenclature):
         item = self.get(id_nomenclature.unique_code)

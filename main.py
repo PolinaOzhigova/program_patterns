@@ -13,6 +13,9 @@ from Src.Dto.filter import filter
 from Src.Core.condition_type import condition_type
 from datetime import datetime
 from Src.Models.settings import settings_model
+from Src.Logics.nomenclature_service import nomenclature_service
+from Src.Models.observe import observe
+from Src.Logics.observe_service import observe_service
 
 app = connexion.FlaskApp(__name__)
 
@@ -23,6 +26,12 @@ start.create()
 manager = settings_manager()
 manager.open("../settings.json")
 factory = report_factory(manager.settings)
+
+nomenclature_s = nomenclature_service(reposity)
+observe_nomenclature = observe()
+observe_nomenclature.reposity = reposity
+observe_service.append(observe_nomenclature)
+# nomenclature_s.update
 
 """
 Получить список форматов отчетов

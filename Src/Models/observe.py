@@ -4,7 +4,7 @@ from Src.data_reposity import data_reposity
 
 class observe(absrtact_observe) :
     __events = {}
-    __reposity: data_reposity = None
+    reposity: data_reposity = None
 
     def __init__(self) -> None:
         super().__init__()
@@ -15,7 +15,7 @@ class observe(absrtact_observe) :
         self.__events[_type](params)
 
     def change_event(self, params):
-        all_data = self.__reposity.data[data_reposity.receipt_key]
+        all_data = self.reposity.data[data_reposity.receipt_key]
         for receipt in all_data:
             for ing in receipt.ingridients:
                 for nomenc in ing.nomeclature:
@@ -23,7 +23,7 @@ class observe(absrtact_observe) :
                         setattr(nomenc, attr, value)
 
     def delete_event(self, params):
-        all_data = self.__reposity.data[data_reposity.receipt_key]
+        all_data = self.reposity.data[data_reposity.receipt_key]
 
         stop_word = False
         for receipt in all_data:
