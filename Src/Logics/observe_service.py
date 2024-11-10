@@ -23,4 +23,5 @@ class observe_service():
         for instance in observe_service.observers:
             if instance is not None:
                 instance.handle_event( type, params )   
+        return True
     

@@ -14,7 +14,8 @@ from Src.Core.condition_type import condition_type
 from datetime import datetime
 from Src.Models.settings import settings_model
 from Src.Logics.nomenclature_service import nomenclature_service
-from Src.Models.observe import observe
+from Models.observe_delete import observe_delete
+from Models.observe_delete import observe_update
 from Src.Logics.observe_service import observe_service
 
 app = connexion.FlaskApp(__name__)
@@ -28,10 +29,13 @@ manager.open("../settings.json")
 factory = report_factory(manager.settings)
 
 nomenclature_s = nomenclature_service(reposity)
-observe_nomenclature = observe()
-observe_nomenclature.reposity = reposity
-observe_service.append(observe_nomenclature)
-# nomenclature_s.update
+observe_nomenclature_del = observe_delete()
+observe_nomenclature_del.reposity = reposity
+observe_service.append(observe_nomenclature_del)
+
+observe_nomenclature_up = observe_update()
+observe_nomenclature_up.reposity = reposity
+observe_service.append(observe_nomenclature_up)
 
 """
 Получить список форматов отчетов
@@ -127,6 +131,33 @@ def set_data_block(data_block: datetime):
 @app.route("/app/data_block", methods=["GET"])
 def get_data_block():
     return {"dateblock": settings_model.data_block}
+
+
+@app.route("/api/nomenclature/get/<string:item_id>", methods=["GET"])
+def nomenclature_get(item_id: str):
+    nomenclature_s.get(item_id)
+    return 200
+
+
+@app.route("/api/nomenclature/add", methods=["POST"])
+def nomenclature_add():
+    item = request.get_json()
+    nomenclature_s.put(item)
+    return 200
+
+
+@app.route("/api/nomenclature/update", methods=["POST"])
+def nomenclature_update():
+    item = request.get_json()
+    nomenclature_service.update(item)
+    return 200
+
+
+
+@app.route("/api/nomenclature/delete/<string:item_id>", methods=["GET"])
+def nomenclature_delete(item_id: str):
+    nomenclature_s.delete_item(item_id)
+    return 200
     
 
 
