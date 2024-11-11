@@ -170,6 +170,95 @@ paths:
         default:
           description: Неизвестная ошибка
 
+/api/nomenclature/get/{item_id}:
+    get:
+      operationId: main.nomenclature_get
+      parameters:
+        - name: item_id
+          in: path
+          required: true
+          type: string
+      produces:
+        - application/text
+      responses:
+        200:
+          description: OK
+          schema:
+            type: string
+        404:
+          description: "Элемент не найден"
+        500:
+          description: "Ошибка на сервере"
+
+  /api/nomenclature/add:
+    post:
+      operationId: main.nomenclature_add
+      consumes:
+        - application/json
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            type: "object"
+            additionalProperties: true
+      produces:
+        - application/text
+      responses:
+        200:
+          description: "Элемент успешно создан"
+          schema:
+            type: "object"
+        400:
+          description: "Некорректные данные"
+        500:
+          description: "Ошибка на сервере"
+
+  /api/nomenclature/update:
+    post:
+      operationId: main.nomenclature_update
+      consumes:
+        - application/json
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Данные для обновления элемента"
+          required: true
+          schema:
+            type: string
+            additionalProperties: true
+      produces:
+        - application/text
+      responses:
+        200:
+          description: "Элемент успешно обновлен"
+          schema:
+            type: string
+        400:
+          description: "Некорректные данные"
+        500:
+          description: "Ошибка на сервере"
+
+  /api/nomenclature/delete/{item_id}:
+    delete:
+      operationId: main.nomenclature_delete
+      parameters:
+        - name: item_id
+          in: path
+          required: true
+          type: string
+          description: "ID элемента номенклатуры"
+      produces:
+        - application/text
+      responses:
+        200:
+          description: "Элемент успешно удален"
+          schema:
+            type: string
+        404:
+          description: "Элемент не найден"
+        500:
+          description: "Ошибка на сервере"
         
            
 definitions:

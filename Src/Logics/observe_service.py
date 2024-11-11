@@ -1,7 +1,7 @@
 from Src.Core.abstract_logic import abstract_logic
 from Src.Core.event_type import event_type
 
-class observe_service:
+class observe_service():
     observers = []
 
     @staticmethod
@@ -23,4 +23,5 @@ class observe_service:
         for instance in observe_service.observers:
             if instance is not None:
                 instance.handle_event( type, params )   
+        return True
     
