@@ -17,6 +17,7 @@ from Src.Logics.nomenclature_service import nomenclature_service
 from Models.observe_delete import observe_delete
 from Models.observe_delete import observe_update
 from Src.Logics.observe_service import observe_service
+import json
 
 app = connexion.FlaskApp(__name__)
 
@@ -158,8 +159,29 @@ def nomenclature_update():
 def nomenclature_delete(item_id: str):
     nomenclature_s.delete_item(item_id)
     return 200
-    
 
+"""
+Сохранить все данные в файл из репозитория в источник (файл)
+"""
+@app.route("/api/save_data", methods=["POST"])
+def save_data():
+    reposity.load_data()
+    return 200
+
+"""
+Восстановить все данные из файла (источника) в репозиторий
+"""
+@app.route("/api/upload_data", methods=["POST"])
+def upload_data():
+    reposity.unpload_data()
+    return 200
+
+"""
+Оборотно-сальдовая ведомость
+"""
+@app.route("/app/data_block", methods=["GET"])
+def get_data_block():
+    return {"dateblock": settings_model.data_block}
 
 if __name__ == '__main__':
     app.add_api('swagger.yaml' )

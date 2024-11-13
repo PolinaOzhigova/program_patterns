@@ -115,6 +115,7 @@ class settings_manager(abstract_logic):
         default_settings.organization_name = "Рога и копыта (default)"
         default_settings.data_block = datetime.now()
         default_settings.default_report_format = format_reporting.JSON.value
+        default_settings.start = True
 
         handlers = []
         handlers.append(  settings_report_handler.create( format_reporting.CSV.value, "csv_report" ) )

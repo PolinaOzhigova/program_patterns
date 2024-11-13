@@ -9,3 +9,4 @@ class event_type(Enum):
     CHANGE_NOMENCLATURE = 2
     CHANGE_RANGE = 3
     CHANGE_BLOCK_PERIOD = 4
+    FIRST_START = 5

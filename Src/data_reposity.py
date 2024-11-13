@@ -1,5 +1,9 @@
 from Src.Core.abstract_logic import abstract_logic
 from datetime import datetime
+from Src.Logics.observe_service import observe_service
+from Src.Core.event_type import event_type
+import json
+from Src.settings_manager import settings_manager
 
 """
 Репозиторий данных
@@ -89,3 +93,22 @@ class data_reposity(abstract_logic):
     """
     def set_exception(self, ex: Exception):
         self._inner_set_exception(ex)    
+
+    """Наблюдатель"""
+    def handle_event(self, type: event_type, params ):
+        super().handle_event(type, params)       
+
+        if type == event_type.FIRST_START:
+            manager = settings_manager()
+            manager.start = False
+            self.save(self.__file_name)
+
+    def upload_data(self):
+        with open('data_reposity.json', 'w') as f:
+            json.dump(self.__data, f)
+        self.handle_event(event_type.FIRST_START, None)
+    
+    def load_data(self):
+        with open('data_reposity.json') as f:
+            self.__data = json.load(f)
+        self.handle_event(event_type.FIRST_START, None)

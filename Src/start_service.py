@@ -177,18 +177,21 @@ class start_service(abstract_logic):
     Первый старт
     """
     def create(self) -> bool:
-        try:
-            self.__create_nomenclature_groups()
-            self.__create_ranges()
-            self.__create_nomenclatures()
-            self.__create_receipts()
-            self.__create_warehouse()
-            self.__create_warehouse_transaction()
+        if(d == False): #fix
+            pass
+        else:
+            try:
+                self.__create_nomenclature_groups()
+                self.__create_ranges()
+                self.__create_nomenclatures()
+                self.__create_receipts()
+                self.__create_warehouse()
+                self.__create_warehouse_transaction()
 
-            return True
-        except Exception as ex :
-            self.set_exception(ex)
-            return False    
+                return True
+            except Exception as ex :
+                self.set_exception(ex)
+                return False    
 
     """
     Перегрузка абстрактного метода
