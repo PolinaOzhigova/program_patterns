@@ -4,10 +4,9 @@ from Src.data_reposity import data_reposity
 
 class observe_delete(absrtact_observe) :
     reposity: data_reposity = None
-    _type :event_type = None
 
     def handle_event(self, _type, params):
-        if self._type != event_type.DELETE_NOMENCLATURE:
+        if _type != event_type.DELETE_NOMENCLATURE:
             return
 
         all_data = self.reposity.data[data_reposity.receipt_key]

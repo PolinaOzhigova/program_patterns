@@ -170,7 +170,7 @@ paths:
         default:
           description: Неизвестная ошибка
 
-/api/nomenclature/get/{item_id}:
+  /api/nomenclature/get/{item_id}:
     get:
       operationId: main.nomenclature_get
       parameters:
@@ -260,6 +260,56 @@ paths:
         500:
           description: "Ошибка на сервере"
         
+  /api/save_data:
+    post:
+      operationId: main.save_data
+      consumes:
+        - application/json
+      produces:
+        - application/text
+      responses:
+        200:
+          description: "Элемент успешно обновлен"
+          schema:
+            type: "object"
+        400:
+          description: "Некорректные данные"
+        500:
+          description: "Ошибка на сервере"
+
+  /api/upload_data:
+    post:
+      operationId: main.upload_data
+      consumes:
+        - application/json
+      produces:
+        - application/text
+      responses:
+        200:
+          description: "Элемент успешно обновлен"
+          schema:
+            type: "object"
+        400:
+          description: "Некорректные данные"
+        500:
+          description: "Ошибка на сервере"
+
+  /api/get_osb:
+    get:
+      summary: Получить Оборотно-сальдовая ведомость
+      operationId: main.get_osb
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+        500:
+          description: Ошибка на сервере
+        default:
+          description: Неизвестная ошибка
+
            
 definitions:
     filter:

@@ -177,7 +177,7 @@ class start_service(abstract_logic):
     Первый старт
     """
     def create(self) -> bool:
-        if(d == False): #fix
+        if(False): #fix
             pass
         else:
             try:

@@ -14,9 +14,12 @@ from Src.Core.condition_type import condition_type
 from datetime import datetime
 from Src.Models.settings import settings_model
 from Src.Logics.nomenclature_service import nomenclature_service
-from Models.observe_delete import observe_delete
-from Models.observe_delete import observe_update
+from Src.Observe_objects.observe_delete import observe_delete
+from Src.Observe_objects.observe_update import observe_update
+from Src.Observe_objects.observe_update import observe_start
 from Src.Logics.observe_service import observe_service
+from Src.Logics.reposity_service import reposity_service
+from Src.Logics.osb_service import osb_service
 import json
 
 app = connexion.FlaskApp(__name__)
@@ -37,6 +40,16 @@ observe_service.append(observe_nomenclature_del)
 observe_nomenclature_up = observe_update()
 observe_nomenclature_up.reposity = reposity
 observe_service.append(observe_nomenclature_up)
+
+reposity_service_observe = reposity_service(reposity)
+observe_settings_start = observe_start()
+observe_settings_start.reposity = reposity
+observe_service.append(observe_settings_start)
+
+reposity_service_osb = osb_service(reposity)
+observe_osb_report = observe_start()
+observe_osb_report.reposity = reposity
+observe_service.append(observe_osb_report)
 
 """
 Получить список форматов отчетов
@@ -165,7 +178,7 @@ def nomenclature_delete(item_id: str):
 """
 @app.route("/api/save_data", methods=["POST"])
 def save_data():
-    reposity.load_data()
+    reposity_service_observe.load_data()
     return 200
 
 """
@@ -173,15 +186,19 @@ def save_data():
 """
 @app.route("/api/upload_data", methods=["POST"])
 def upload_data():
-    reposity.unpload_data()
+    reposity_service_observe.unpload_data()
     return 200
 
 """
 Оборотно-сальдовая ведомость
 """
-@app.route("/app/data_block", methods=["GET"])
-def get_data_block():
-    return {"dateblock": settings_model.data_block}
+@app.route("/api/get_osb", methods=["GET"])
+def get_osb():
+    result = reposity_service_osb.get_osb_report()
+    with open('osb.json', 'w') as f:
+            json.dump(result, f)
+
+    return {"report": result}
 
 if __name__ == '__main__':
     app.add_api('swagger.yaml' )

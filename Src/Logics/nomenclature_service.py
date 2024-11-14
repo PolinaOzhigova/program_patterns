@@ -29,6 +29,7 @@ class nomenclature_service():
         for attr, value in vars(item_nomenclature).items():
             setattr(old_nomenclature, attr, value)
         observe_service.raise_event(event_type.CHANGE_NOMENCLATURE, item_nomenclature)
+        observe_service.raise_event(event_type.OSB, self.__reposity.data[data_reposity.warehouse_transaction_key()])
 
     def delete(self, id_nomenclature):
         item = self.get(id_nomenclature.unique_code)
