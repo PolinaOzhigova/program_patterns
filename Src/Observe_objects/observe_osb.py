@@ -17,15 +17,15 @@ class observe_osb(absrtact_observe):
             for transaction in params:
                 validator.validate(transaction, warehouse_transaction)
                 warehouse1 = transaction.warehouse
-                if warehouse1.name in dates.keys():
-                    result.append([dates.get(warehouse1.name), None, warehouse1])
-                    dates.update(warehouse1.name, transaction.period)
+                if warehouse1.address in dates.keys():
+                    result.append([dates.get(warehouse1.address), None, warehouse1, transaction])
+                    dates.update(warehouse1.address, transaction.period)
                 else:
-                    dates.update(warehouse1.name, transaction.period)
+                    dates.update(warehouse1.address, transaction.period)
             for res in result:
                 for keys in dates:
                     if keys == res[2]:
-                        res[1] = dates.get(warehouse1.name)
+                        res[1] = dates.get(warehouse1.address)
 
             self.reposity.data[data_reposity.osb_key()] = result
             return result
