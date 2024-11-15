@@ -16,7 +16,7 @@ from Src.Models.settings import settings_model
 from Src.Logics.nomenclature_service import nomenclature_service
 from Src.Observe_objects.observe_delete import observe_delete
 from Src.Observe_objects.observe_update import observe_update
-from Src.Observe_objects.observe_update import observe_start
+from Src.Observe_objects.observe_start import observe_start
 from Src.Logics.observe_service import observe_service
 from Src.Logics.reposity_service import reposity_service
 from Src.Logics.osb_service import osb_service
