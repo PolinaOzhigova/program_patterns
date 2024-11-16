@@ -1,7 +1,7 @@
 from Src.Core.abstract_logic import abstract_logic
 from Src.Core.event_type import event_type
 
-class observe_service:
+class observe_service():
     observers = []
 
     @staticmethod
@@ -11,7 +11,7 @@ class observe_service:
             return
 
         if not isinstance(service, abstract_logic):
-            raise argument_exception("Некорректный тип данных!")
+            return
 
         items =  list(map( lambda x: type(x).__name__,  observe_service.observers))
         found =    type( service ).__name__ in items 
@@ -20,7 +20,8 @@ class observe_service:
 
     @staticmethod
     def raise_event( type: event_type, params ):
-        for instance in observe_service.observers:
-            if instance is not None:
-                instance.handle_event( type, params )   
+        for observer in observe_service.observers:
+            if observer is not None:
+                observer.handle_event( type, params )   
+        return True
     

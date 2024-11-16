@@ -3,18 +3,19 @@ from Src.Core.transation_type import transaction_type
 from Src.Core.validator import validator
 from Src.Models.warehouse_stock import warehouse_stock
 from Src.Models.warehouse_transactions import warehouse_transaction
-from Src.Models.settings import settings_model
 from Src.data_reposity import data_reposity
 from datetime import datetime
 from Src.settings_manager import settings_manager
 
 class turnover_process(abstract_process):
+    reposity = data_reposity()
+
     def execute(self, transactions: list[warehouse_transaction]) -> list[warehouse_stock]:
-        reposity = data_reposity()
         manager = settings_manager()
+
         turns1 = None
-        if "turnover_process_key" in reposity.data.keys():
-            turns1 = reposity.data[data_reposity.turnover_process_key()]
+        if "turnover_process_key" in self.reposity.data.keys():
+            turns1 = self.reposity.data[data_reposity.turnover_process_key()]
             date_start = [manager.settings.data_block]
             date_end = datetime.now()
         else: 
@@ -40,7 +41,8 @@ class turnover_process(abstract_process):
                                                  range=key[2])
             turns.append(turn)
 
-        reposity.data[data_reposity.turnover_process_key()] = turns
+        self.reposity.data[data_reposity.turnover_process_key()] = turns
         if turns1 != None:
             turns.extend(turns1)
         return turns
+    

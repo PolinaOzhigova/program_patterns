@@ -1,5 +1,7 @@
 from Src.Core.abstract_logic import abstract_logic
 from datetime import datetime
+from Src.Core.event_type import event_type
+from Src.settings_manager import settings_manager
 
 """
 Репозиторий данных
@@ -68,6 +70,13 @@ class data_reposity(abstract_logic):
     @staticmethod
     def turnover_process_key():
         return "turnover_process"
+    
+    """
+    Ключ для хранения Оборотно-сальдовая ведомость  (ОСВ)
+    """
+    @staticmethod
+    def osb_key():
+        return "osb"
     
     """
     Получить список всех ключей
