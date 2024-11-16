@@ -10,6 +10,7 @@ from Src.Models.ingredient import ingredient_model
 from Src.Models.warehouse import warehouse
 from Src.Models.warehouse_transactions import warehouse_transaction
 from datetime import datetime
+from Src.settings_manager import settings_manager
 
 """
 Сервис для реализации первого старта приложения
@@ -177,8 +178,9 @@ class start_service(abstract_logic):
     Первый старт
     """
     def create(self) -> bool:
-        if(False): #fix
-            pass
+        manager = settings_manager()
+        if(manager.start == False):
+            self = open(self.__file_name)
         else:
             try:
                 self.__create_nomenclature_groups()

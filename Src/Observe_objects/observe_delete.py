@@ -21,5 +21,6 @@ class observe_delete(absrtact_observe) :
                 for nomenc in ing.nomeclature:
                     if(nomenc == params):
                         stop_word = True
+                        break
         else:
             all_data.remove(params)
