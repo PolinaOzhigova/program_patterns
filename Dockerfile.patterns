@@ -1,0 +1,15 @@
+FROM python:3.11.7 as base
+
+RUN pip install typing-extensions --upgrade
+RUN pip install dict2xml
+RUN pip install -U connexion[flask]
+RUN pip install -U connexion[swagger-ui]
+RUN pip install -U connexion[uvicorn]
+RUN pip install -U flask-restplus
+RUN pip install -U Flask
+
+COPY ./Src /Src
+COPY ./main.py .
+COPY ./swagger.yaml .
+
+CMD ["python", "main.py"]
