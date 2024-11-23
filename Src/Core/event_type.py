@@ -11,3 +11,7 @@ class event_type(Enum):
     CHANGE_BLOCK_PERIOD = 4
     FIRST_START = 5
     OSB = 6
+
+    DEBUG = 7
+    INFO = 8
+    ERROR = 9

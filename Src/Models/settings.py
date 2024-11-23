@@ -59,6 +59,7 @@ class settings_model(base_model_code):
     __default_report_format:format_reporting = format_reporting.CSV
     __report_handlers:list[settings_report_handler] = []
     __data_block = None
+    __log_type = None
 
     """
     Наименование организации
@@ -141,3 +142,13 @@ class settings_model(base_model_code):
         validator.validate(value, datetime)
         self.__data_block = value
         
+    """
+    Логирование
+    """
+    @property
+    def log_type(self):
+        return self.__log_type
+    
+    @log_type.setter
+    def log_type(self, value):
+        self.__log_type = value

@@ -4,7 +4,7 @@ from Src.Core.validator import argument_exception, operation_exception, validato
 from Src.Core.common import common
 from Src.Core.convert_factory import convert_factory
 from Src.Core.event_type import event_type
-# from Src.Logics.observe_service import observe_service
+from Src.Core.log_type import log_type
 from datetime import datetime
 from Src.Models.settings import settings_report_handler
 from Src.Core.format_reporting import format_reporting
@@ -30,8 +30,6 @@ class settings_manager(abstract_logic):
     def __init__(self) -> None:
         if self.__settings is None:
             self.__settings = self.__default_setting() 
-
-        # observe_service.append(self)
 
 
     """
@@ -116,6 +114,7 @@ class settings_manager(abstract_logic):
         default_settings.data_block = datetime.now()
         default_settings.default_report_format = format_reporting.JSON.value
         default_settings.start = True
+        default_settings.log_type = log_type.INFO
 
         handlers = []
         handlers.append(  settings_report_handler.create( format_reporting.CSV.value, "csv_report" ) )
