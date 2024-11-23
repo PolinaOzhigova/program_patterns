@@ -1,0 +1,1 @@
+curl -X 'POST' 'http://localhost:8000/api/reports/range' -H 'accept: application/text' -H 'Content-Type: application/json' -d '{"items": [{"field": "name","condition": 2,"value": "м"},{"field": "name","condition": 2,"value": "мука"}]}'

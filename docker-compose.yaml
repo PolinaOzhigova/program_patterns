@@ -1,0 +1,18 @@
+services:
+  patterns:
+    container_name: patterns
+    image: patterns
+    ports:
+    - 8000:8080
+    volumes:
+    - ./settings.json:/settings.json
+  patterns_crud:
+    container_name: patterns_crud
+    image: patterns
+    ports:
+    - 8001:8080
+    volumes:
+    - ./settings.json:/settings.json
+
+networks:
+  default:
