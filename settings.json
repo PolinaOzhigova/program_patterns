@@ -18,5 +18,6 @@
     ],
     "data_block": "2024-10-05",
     "start": true,
-    "log_type": 1
+    "log_type": 1,
+    "database_on": true
 }

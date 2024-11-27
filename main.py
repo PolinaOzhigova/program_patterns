@@ -54,14 +54,14 @@ observe_service.append(observe_osb_report)
 """
 Получить список форматов отчетов
 """
-@app.route("/api/dictionary/formats", methods=['GET'])
+@app.route("/app/dictionary/formats", methods=['GET'])
 def formats():
     return format_reporting.list()
 
 """
 Получить список сущностей
 """
-@app.route("/api/dictionary/entities", methods=['GET'])
+@app.route("/app/dictionary/entities", methods=['GET'])
 def entities():
     return data_reposity.keys()
 
@@ -147,20 +147,20 @@ def get_data_block():
     return {"dateblock": settings_model.data_block}
 
 
-@app.route("/api/nomenclature/get/<string:item_id>", methods=["GET"])
+@app.route("/app/nomenclature/get/<string:item_id>", methods=["GET"])
 def nomenclature_get(item_id: str):
     nomenclature_s.get(item_id)
     return 200
 
 
-@app.route("/api/nomenclature/add", methods=["POST"])
+@app.route("/app/nomenclature/add", methods=["POST"])
 def nomenclature_add():
     item = request.get_json()
     nomenclature_s.put(item)
     return 200
 
 
-@app.route("/api/nomenclature/update", methods=["POST"])
+@app.route("/app/nomenclature/update", methods=["POST"])
 def nomenclature_update():
     item = request.get_json()
     nomenclature_service.update(item)
@@ -168,7 +168,7 @@ def nomenclature_update():
 
 
 
-@app.route("/api/nomenclature/delete/<string:item_id>", methods=["GET"])
+@app.route("/app/nomenclature/delete/<string:item_id>", methods=["GET"])
 def nomenclature_delete(item_id: str):
     nomenclature_s.delete_item(item_id)
     return 200
@@ -176,7 +176,7 @@ def nomenclature_delete(item_id: str):
 """
 Сохранить все данные в файл из репозитория в источник (файл)
 """
-@app.route("/api/save_data", methods=["POST"])
+@app.route("/app/save_data", methods=["POST"])
 def save_data():
     reposity_service_observe.load_data()
     return 200
@@ -184,7 +184,7 @@ def save_data():
 """
 Восстановить все данные из файла (источника) в репозиторий
 """
-@app.route("/api/upload_data", methods=["POST"])
+@app.route("/app/upload_data", methods=["POST"])
 def upload_data():
     reposity_service_observe.unpload_data()
     return 200
@@ -192,7 +192,7 @@ def upload_data():
 """
 Оборотно-сальдовая ведомость
 """
-@app.route("/api/get_osb", methods=["GET"])
+@app.route("/app/get_osb", methods=["GET"])
 def get_osb():
     result = reposity_service_osb.get_osb_report()
     with open('osb.json', 'w') as f:

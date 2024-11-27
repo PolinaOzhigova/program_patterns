@@ -1,4 +1,6 @@
 FROM python:3.11.7 as base
+WORKDIR /app
+EXPOSE 8080
 
 RUN pip install typing-extensions --upgrade
 RUN pip install dict2xml
